@@ -102,14 +102,14 @@ h4, h5, h6 {
     line-height: 1.2em !important;
     margin-bottom: 0;
     margin-top: 0;
-    font-weight: 600;
+    font-weight: normal;
 }
 .h1, .h2, .h3,
 .h4, .h5, .h6 {
     margin-bottom: 0;
     margin-top: 0;
     font-family: $primary-font;
-    font-weight: 600;
+    font-weight: normal;
     color: $title-color;
 }
 
@@ -161,6 +161,10 @@ td, th {
 .section-gap-full { padding: 120px 0; }
 .section-gap-half { padding: 75px 0; }
 .pb-30{padding-bottom: 30px;}
+.pt-0{padding-top: 0px;}
+.pb-0{padding-bottom: 0px;}
+.pl-0{padding-left: 0px;}
+.pr-0{padding-right: 0px;}
 .text-center{text-align:center;}
 .text-left{text-align:left;}
 .text-right{text-align:right;}

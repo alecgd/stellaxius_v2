@@ -167,30 +167,48 @@
 
 .service-section {
     padding-bottom: 120px;
+    padding-top: 0px;
+    margin-top: -80px;
+    z-index: 1;
+    position: relative;
 
     .single-service {
         position: relative;
-        background-color: #f5f5f56b;
-        padding: 40px 30px;
-        -webkit-box-shadow: 0 7px 20px -10px rgba(171, 171, 171, 0.7);
-        -moz-box-shadow: 0 7px 20px -10px rgba(171, 171, 171, 0.7);
-        box-shadow: 0 7px 20px -10px rgba(171, 171, 171, 0.7);
+        background-color: $white;
+        padding: 30px 15px 30px 30px;
+        -webkit-box-shadow: 0 6px 30px 0px rgba(0, 0, 0, 0.20);
+        -moz-box-shadow: 0 6px 30px 0px rgba(0, 0, 0, 0.20);
+        box-shadow: 0 6px 30px 0px rgba(0, 0, 0, 0.20);
         -webkit-transition: all 0.4s ease;
         -moz-transition: all 0.4s ease;
         -o-transition: all 0.4s ease;
         transition: all 0.4s ease;
 
+        .img-services-home-1,
+        .img-services-home-2 {
+            margin: -30px 0px -30px -15px;
+            padding: 0;
+            background: #D6F9FB;
+            
+            img {
+                position: absolute;
+                bottom: 0;
+            }
+        }
+        
         i {
             font-size: 35px;
             color: $black;
         }
 
         h4 {
-            margin: 10px 0px;
+            margin: 0 0 10px 0;
+            font-size: 20px;
+            font-weight: bold;
         }
 
         p {
-            margin-bottom: 0px;
+            margin-bottom: 12px;
         }
 
         &:hover {
@@ -199,9 +217,12 @@
             -ms-transform: translateY(-10px);
             -o-transform: translateY(-10px);
             transform: translateY(-10px);
-            -webkit-box-shadow: 0 10px 50px -12px rgba(171, 171, 171, 0.9);
-            -moz-box-shadow: 0 10px 50px -12px rgba(171, 171, 171, 0.9);
-            box-shadow: 0 10px 50px -12px rgba(171, 171, 171, 0.9);
+            -webkit-box-shadow: 0 10px 50px -12px rgba(0, 0, 0, 0.50);
+            -moz-box-shadow: 0 10px 50px -12px rgba(0, 0, 0, 0.50);
+            box-shadow: 0 10px 50px -12px rgba(0, 0, 0, 0.50);
+        }
+        .img-services-home-2 {
+            background: #FBEED6;
         }
     }
 

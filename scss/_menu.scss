@@ -21,7 +21,11 @@
 
 .dope-nav-container.dope-sticky {
     background-color: rgba(25, 42, 86, 1);
-    padding: 0px;
+    padding: 10px 0px;
+}
+
+.dope-nav-container.dope-sticky .dopenav ul li a {
+    color: #fff;
 }
 
 .dope-navbar {
@@ -57,7 +61,7 @@
 }
 
 .dope-nav-container.dope-sticky {
-    background-color: #fffffff2;
+    background-color: rgba(47, 53, 66, 0.95);
     transition: all 0.5s;
     -webkit-box-shadow: 0px 9px 40px -13px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 9px 40px -13px rgba(0, 0, 0, 0.75);
@@ -69,7 +73,7 @@
 }
 
 .nav-brand {
-    max-width: 120px;
+    max-width: 285px;
 }
 
 .dope-btn {
@@ -107,9 +111,22 @@
     text-decoration: none;
     outline: none;
     font-size: 14px;
-    font-weight: 600;
-    color: #000;
+    color: $white;
     display: inline-block;
+}
+
+.dope-nav-container .active,
+.dope-nav-container.dope-sticky .active {
+    color: #F41E3D!important;
+    background-color: rgba(47, 53, 66, 0.1);
+    border-bottom: 5px solid #f41e3d;
+    padding: 42px 12px;
+    line-height: 5px;
+    font-weight: 800;
+}
+
+.dope-nav-container.dope-sticky .active {
+    background-color: rgb(47, 53, 66);
 }
 
 .dope-nav-container.dope-sticky {
@@ -173,6 +190,10 @@
     clear: both;
     position: inherit;
     z-index: 10;
+
+    .primary-btn {
+        min-width: auto;
+    }
 }
 
 .dopenav ul li.cn-dropdown-item {
@@ -194,7 +215,7 @@
 }
 
 .dopenav ul li a {
-    padding: 0 12px;
+    padding: 0 15px;
     display: block;
     height: 35px;
     font-size: 14px;
