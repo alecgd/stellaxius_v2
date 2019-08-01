@@ -2,9 +2,10 @@
 /*  Font Family and Colors Styles
 /* =================================== */
 
+/*  Font */
 $primary-font	: 'Poppins', sans-serif;
 
-
+/*  Primary Colors */
 $primary-color      : #f41e3d;
 $secondary-color    : #15A0DB;
 
@@ -15,3 +16,16 @@ $white				: #fff;
 $offwhite			: #fafcff;
 $black				: #2F3542;
 
+/*  Services Colors */
+$service1				: #D6F9FB;
+$service2			    : #FBEED6;
+$service3				: #E6D6FB;
+$service4				: #FBD6D6;
+
+
+/* =================================== */
+/*  Shadows
+/* =================================== */
+
+$shadow-box         : 0 6px 30px 0 rgba(0,0,0,.2);
+$shadow-image       : 0 0px 10px 0 rgba(0,0,0,.2);

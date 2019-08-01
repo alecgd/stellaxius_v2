@@ -2,9 +2,11 @@
 /*  Features Styles 
 /* =================================== */
 .featured-section {
+    background-color: rgba(21, 160, 219, 0.1);
+    padding: 20px 0;
+
     .row {
-        padding-bottom: 75px;
-        border-bottom: 1px solid #eee;
+        padding: 18px 0;
     }
 
     .single-logo {
@@ -117,56 +119,85 @@
 }
 
 .explore-section {
-    background: url(../img/explore.jpg) right top no-repeat;
+    background: url(../img/img_efeito_bg_1.svg) right top no-repeat;
     background-size: cover;
-    color: $white;
-
-    h1,
-    h3 {
-        color: $white;
-    }
-
-    h3 {
-        font-weight: 300
-    }
-
-    h1 {
-        font-size: 45px;
-        padding-top: 10px;
-        padding-bottom: 30px;
-    }
 
     .overlay-bg {
         background: linear-gradient(to right, #000, rgba(#eb8fa9, 0));
     }
 
+    .secondary-btn {
+        margin-top: 50px;
+    }
+
     .counter-wrap {
-        margin-top: 30px;
+        max-width: 370px;
+        height: 162px;
+        background-color: $white;
+        padding: 20px;
+        margin: 0 auto;
+        transition: all .3s ease 0s;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 0 6px 30px 0 rgba(0,0,0,.2);
+        -webkit-box-shadow: 0 6px 30px 0 rgba(0,0,0,.2);
+        -moz-box-shadow: 0 6px 30px 0 rgba(0,0,0,.2);
+
+        .badge-experience-1 {
+            position: absolute;
+            right: 10px;
+            top: -10px;
+        }
+
+        .badge-experience-2 {
+            position: absolute;
+            right: 44px;
+            top: -20px;
+            background-color: #fff;
+            width: 70px;
+            height: 70px;
+            border-radius: 100px;
+            line-height: 70px;
+        }
+
+        .badge-partner {
+            width: 100%;
+
+            img {
+                margin: 0 auto;
+            }
+
+            p {
+                margin: 10px 0 0 0;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+
+        
     }
 
     .single-counter {
-        width: calc(100%/3);
-        border-right: 1px solid #eeeeee5c;
         text-align: center;
-
-        &:last-child {
-            border-right: none;
-        }
+        margin-top: 20px;
+        width: 100%;
 
         p {
-            margin-bottom: 0px
+            margin: 10px 0 0 0;
+            text-transform: uppercase;
+            font-weight: bold;
+            line-height: 16px;
         }
 
         h2 {
             font-weight: 300;
             font-size: 50px;
-            color: $white;
         }
     }
 }
 
 .service-section {
-    padding-bottom: 120px;
+    padding-bottom: 100px;
     padding-top: 0px;
     margin-top: -80px;
     z-index: 1;

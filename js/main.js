@@ -135,6 +135,17 @@
     }
   });
 
+  $("#certifications-carusel").owlCarousel({
+    items: 7,
+    loop: true,
+    dots: true,
+    nav:false,
+    autoplayHoverPause: true,
+    smartSpeed: 500,
+    autoplay: true,
+    margin: 40,
+  });
+
 
   $("#testimonial-carusel2").owlCarousel({
     items: 1,

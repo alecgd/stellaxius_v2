@@ -1,5 +1,4 @@
 /* =================================== */
-
 /*  Banner Styles 
 /* =================================== */
 
@@ -63,9 +62,9 @@
 .dope-nav-container.dope-sticky {
     background-color: rgba(47, 53, 66, 0.95);
     transition: all 0.5s;
-    -webkit-box-shadow: 0px 9px 40px -13px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 9px 40px -13px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 9px 40px -13px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0 0px 20px 0px rgba(0, 0, 0, 0.38);
+    -moz-box-shadow: 0 0px 20px 0px rgba(0, 0, 0, 0.38);
+    box-shadow: 0 0px 20px 0px rgba(0, 0, 0, 0.38);
 }
 
 .dope-navbar {
@@ -115,12 +114,16 @@
     display: inline-block;
 }
 
+.dope-nav-container .link-menu-s a:hover {
+    background-color: rgba(47, 53, 66, 0.1);
+}
+
 .dope-nav-container .active,
 .dope-nav-container.dope-sticky .active {
-    color: #F41E3D!important;
+    color: $primary-color!important;
     background-color: rgba(47, 53, 66, 0.1);
-    border-bottom: 5px solid #f41e3d;
-    padding: 42px 12px;
+    border-bottom: 5px solid $primary-color;
+    padding: 42px 15px;
     line-height: 5px;
     font-weight: 800;
 }
@@ -193,6 +196,8 @@
 
     .primary-btn {
         min-width: auto;
+        height: auto;
+        line-height: 40px;
     }
 }
 
@@ -217,9 +222,9 @@
 .dopenav ul li a {
     padding: 0 15px;
     display: block;
-    height: 35px;
+    height: 89px;
     font-size: 14px;
-    line-height: 34px;
+    line-height: 90px;
 }
 
 .dopenav ul li .megamenu li a {
@@ -230,6 +235,71 @@
     height: auto;
     line-height: 1;
 }
+
+/* =================================== */
+/*  Mega Menus 
+/* =================================== */
+
+.dopenav ul li .dropdown ul li,
+.dope-sticky .dopenav ul li .dropdown ul li {
+    width: 366px;
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 6px 10px 0 rgba(0,0,0,.1);
+    -moz-box-shadow: 0 6px 10px 0 rgba(0,0,0,.1);
+    border-radius: 2px;
+    padding: 20px;
+    margin: 10px 0 17px 0;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    color: $title-color;
+
+    a, h3 {
+        padding: 0;
+        border-bottom: none;
+        color: inherit;
+        line-height: 16px;
+
+        &:hover {
+            background-color: transparent;
+            padding: 0;
+            line-height: 16px;
+            color: $primary-color;
+        }
+    }
+
+    span {
+        float: left;
+        margin-right: 10px;
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: bold;
+        display: inline-block;
+
+    }
+    
+    p {
+        margin: 0;
+        display: inline-block;
+    }
+
+    &:hover {
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+        transform: translateY(-10px);
+        -webkit-box-shadow: 0 10px 50px -12px rgba(0, 0, 0, 0.50);
+        -moz-box-shadow: 0 10px 50px -12px rgba(0, 0, 0, 0.50);
+        box-shadow: 0 10px 50px -12px rgba(0, 0, 0, 0.50);
+    }
+}
+
 
 /* Down Arrow Icon for Megamenu */
 
@@ -253,7 +323,7 @@
     font-family: 'FontAwesome';
     content: "\f107";
     font-size: 12px;
-    color: #000000;
+    color: $white;
     padding-left: 5px;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
@@ -294,6 +364,8 @@
 .dope-btn:hover,
 .dope-btn:focus {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Dropdown Toggle */
@@ -414,6 +486,8 @@
     background-color: #ffffff;
     z-index: 200;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
 }
 
 .dopenav ul li .megamenu .single-mega.cn-col-5 {
@@ -532,19 +606,92 @@
 }
 
 .breakpoint-off .dopenav ul li .dropdown {
-    width: 180px;
     position: absolute;
     background-color: #ffffff;
-    top: 120%;
-    left: 0;
     z-index: 100;
-    height: auto;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-    -webkit-transition-duration: 300ms;
-    transition-duration: 300ms;
     opacity: 0;
     visibility: hidden;
-    padding: 10px 0;
+    padding: 10px;
+    width: 670px;
+    height: 290px;
+    left: -280px;
+    border-radius: 2px;
+    border-top: 5px solid #F41E3D;
+    box-shadow: 0 6px 30px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 6px 30px 0 rgba(0,0,0,.2);
+    -moz-box-shadow: 0 6px 30px 0 rgba(0,0,0,.2);
+
+    .card {
+        width: 250px;
+        min-height: 250px;
+        box-shadow: $shadow-image;
+        margin-right: -15px;
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+
+        a, h5, p {
+            padding: 0;
+            color: inherit;
+            line-height: 24px;
+            height: auto!important;
+            font-size: inherit;
+    
+            &:hover {
+                background-color: transparent;
+                padding: 0;
+                line-height: 24px;
+                color: $primary-color;
+            }
+        }
+
+        &:hover {
+            -webkit-transform: translateY(-10px);
+            -moz-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+            -o-transform: translateY(-10px);
+            transform: translateY(-10px);
+            -webkit-box-shadow: 0 10px 50px -12px rgba(0, 0, 0, 0.50);
+            -moz-box-shadow: 0 10px 50px -12px rgba(0, 0, 0, 0.50);
+            box-shadow: 0 10px 50px -12px rgba(0, 0, 0, 0.50);
+        }
+
+        .img-menu-serv-1 {
+            background-color: $service1;
+        }
+
+        .img-menu-serv-2 {
+            background-color: $service2;
+        }
+
+        .img-menu-serv-3 {
+            background-color: $service3;
+        }
+
+        .img-menu-serv-4 {
+            background-color: $service4;
+        }
+
+        .card-body {
+            padding: 10px;
+        }
+
+        .card-title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .card-text {
+            margin: 0 0 10px 0;
+        }
+    }
+}
+
+.breakpoint-off .dopenav ul li .menu-cards-serv {
+    width: 1064px;
+    display: inline-flex;
+    left: -660px;
 }
 
 .breakpoint-off .dopenav ul li .dropdown li .dropdown {
@@ -598,6 +745,8 @@
     background-color: #ffffff;
     z-index: 200;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
     -webkit-transition-duration: 300ms;
     transition-duration: 300ms;
 }
@@ -631,6 +780,8 @@
     transition-duration: 500ms;
     padding: 0;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     display: block;
     overflow-x: hidden;
     overflow-y: scroll;
