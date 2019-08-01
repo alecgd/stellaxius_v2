@@ -125,7 +125,7 @@
     color: $primary-color!important;
     background-color: rgba(47, 53, 66, 0.1);
     border-bottom: 5px solid $primary-color;
-    padding: 42px 15px;
+    padding: 47.5px 15px;
     line-height: 5px;
     font-weight: 800;
 }
@@ -441,7 +441,7 @@
 
 .dope-navbar-toggler .navbarToggler span {
     position: relative;
-    background-color: #222;
+    background-color: $white;
     border-radius: 3px;
     display: block;
     height: 2px;
@@ -771,7 +771,7 @@
 }
 
 .breakpoint-on .dope-navbar .dope-menu {
-    background-color: $primary-color;
+    background-color: $black;
     position: fixed;
     top: 0;
     left: -310px;
@@ -866,7 +866,6 @@
 
 .breakpoint-on .dopenav>ul>li>a {
     color: $white;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .breakpoint-on .dopenav ul li ul.dropdown li ul li {

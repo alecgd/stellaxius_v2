@@ -356,6 +356,50 @@
 }
 
 @media (max-width:480px) {
+    .dope-navbar {
+        padding: 10px 15px;
+        height: 60px;
+
+        .nav-brand {
+            margin: 0;
+
+            img {
+                max-width: 200px;
+            }
+        }
+    }
+
+    .dope-navbar-toggler,
+    .dope-sticky .dope-navbar-toggler {
+
+        .active {
+            background-color: transparent;
+            border: 0;
+            padding: 0;
+            line-height: normal;
+        }
+    }
+
+    .dope-nav-container ul li,
+    .dope-nav-container.dope-sticky ul li,
+    .dope-nav-container .dopenav ul li a {
+        height: auto;
+        padding: 10px 0;
+        line-height: 33px;
+    }
+
+    .breakpoint-on .dopenav ul li.has-down>a:after {
+        line-height: 70px;
+    }
+
+    .dope-nav-container .active,
+    .dope-nav-container.dope-sticky .active {
+        background-color: transparent;
+        line-height: 33px;
+        height: auto;
+        padding: 10px 0;
+    }
+    
     .single-counter {
         h2 {
             font-size: 30px !important;
