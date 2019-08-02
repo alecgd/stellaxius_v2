@@ -135,15 +135,38 @@
     }
   });
 
+  // ------------------------------------------------------------------------------ //
+  // Certifications carousel  
+  // ------------------------------------------------------------------------------ //
+
   $("#certifications-carusel").owlCarousel({
     items: 7,
     loop: true,
-    dots: true,
-    nav:false,
+    dots: false,
+    nav: true,
     autoplayHoverPause: true,
     smartSpeed: 500,
     autoplay: true,
     margin: 40,
+    responsiveClass:true,
+    responsive: {
+      0: {
+        items: 2,
+        nav: false
+      },
+      480: {
+        items: 2,
+        nav: true
+      },
+      768: {
+        items: 4,
+        nav: true
+      },
+      1000: {
+        items: 7,
+        nav: true
+      }
+    }
   });
 
 
@@ -184,10 +207,6 @@ $('#screenshot-carusel').owlCarousel({
         }
     }
 });
-
-
-  
-
 
 
   // ------------------------------------------------------------------------------ //

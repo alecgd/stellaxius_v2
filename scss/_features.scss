@@ -1,9 +1,35 @@
 /* =================================== */
-/*  Features Styles 
+/*  Certifications Styles 
 /* =================================== */
 .featured-section {
     background-color: rgba(21, 160, 219, 0.1);
-    padding: 20px 0;
+    padding: 29px 0;
+
+    .owl-carousel {
+
+        .owl-nav {
+            
+            button {
+                position: absolute;
+                font-size: 50px;
+                font-weight: lighter;
+                font-family: Poppins,sans-serif;
+                color: #b3b3b3;
+                top: 35%;
+            }
+
+            .owl-prev {
+                left: -20px;
+            }
+    
+            .owl-next {
+                right: -20px;
+            }
+        } 
+        
+
+        
+    }
 
     .row {
         padding: 18px 0;
@@ -197,9 +223,7 @@
 }
 
 .service-section {
-    padding-bottom: 100px;
     padding-top: 0px;
-    margin-top: -80px;
     z-index: 1;
     position: relative;
 

@@ -244,7 +244,7 @@
 
 .dopenav ul li .dropdown ul li,
 .dope-sticky .dopenav ul li .dropdown ul li {
-    width: 366px;
+    width: 100%;
     height: 70px;
     background-color: #fff;
     box-shadow: 0 6px 10px 0 rgba(0,0,0,.1);
@@ -613,21 +613,34 @@
     z-index: 100;
     opacity: 0;
     visibility: hidden;
-    padding: 10px;
-    width: 670px;
+    padding: 10px 5px 10px 10px;
+    width: 700px;
     height: 290px;
-    left: -280px;
+    left: -290px;
     border-radius: 2px;
     border-top: 5px solid #F41E3D;
     box-shadow: 0 6px 30px 0 rgba(0,0,0,.2);
     -webkit-box-shadow: 0 6px 30px 0 rgba(0,0,0,.2);
     -moz-box-shadow: 0 6px 30px 0 rgba(0,0,0,.2);
 
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+
+        .col-lg-3 {
+            padding-right: 0;
+            padding-left: 0;
+
+            .reset-margin-right {
+                margin-right: 0;
+            }
+        }
+    }
+
     .card {
-        width: 250px;
         min-height: 250px;
         box-shadow: $shadow-image;
-        margin-right: -15px;
+        margin-right: 20px;
         -webkit-transition: all 0.4s ease;
         -moz-transition: all 0.4s ease;
         -o-transition: all 0.4s ease;
@@ -688,12 +701,15 @@
             margin: 0 0 10px 0;
         }
     }
+    
 }
 
 .breakpoint-off .dopenav ul li .menu-cards-serv {
     width: 1064px;
     display: inline-flex;
     left: -660px;
+    padding: 20px;
+    height: auto;
 }
 
 .breakpoint-off .dopenav ul li .dropdown li .dropdown {
