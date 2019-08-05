@@ -3,7 +3,7 @@
 /* =================================== */
 
 .testimonial-section {
-    padding-top: 120px;
+    padding-bottom: 50px;
     .testimonial-left {
         p {
             margin-top: 10px;
@@ -17,26 +17,55 @@
         }
     }
     .single-testimonial {
-        border: 1px solid #eee;
-        background: #eeeeee1f;
-        border-radius: 5px;
-        padding: 30px;
-        p {
-            color: $black;
-            font-weight: 400;
-        }
+        width: 840px;
+        margin: 0 auto;
+
         .img-wrap {
-            margin-right: 20px;
+            margin: 0 auto;
+            background: url("../img/img_customer_photo.svg") no-repeat;
+            background-size: cover;
+            width: 120px;
+            height: 132px;
+            padding: 27px 27px 47px 32px;
             img {
-                border-radius: 30px;
+                width: 60px;
+                border-radius: 0;
             }
         }
+
         .details {
+            background: $silver;
+            border-radius: 5px;
+            padding: 30px;
+            margin-top: -18px;
+
             p {
+                color: $black;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+
+                img {
+                    width: 26px;
+                    display: inline-block;
+                    margin: 0 10px;
+                }
+            }
+
+            span {
                 margin-bottom: 0px;
                 color: $text-color;
+                padding: 0;
+                font-size: 12px;
+                background: transparent;
+            }
+
+            h4 {
+                font-size: 14px;
+                font-weight: bold;
             }
         }
+        
     }
     .testimonial-white-bg {
         background: $white !important;
@@ -50,8 +79,8 @@
         }
     }
     .owl-dots {
-        text-align: left;
-        margin-top: 30px;
+        text-align: center;
+        margin-top: 10px;
         .owl-dot {
             border-radius: 20px;
             width: 14px;

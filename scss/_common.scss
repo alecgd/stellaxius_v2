@@ -50,6 +50,7 @@
   min-width: 160px;
   display: inline-block;
   color: $white;
+  border: none;
   @include transition();
 
   &:hover {

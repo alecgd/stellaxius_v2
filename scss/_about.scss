@@ -3,6 +3,27 @@
 /* =================================== */
 
 .about-section {
+    background: url(../img/img_efeito_bg_2.svg) no-repeat;
+    background-size: auto;
+    background-position: bottom;
+    background-color: #F3FAFD;
+    padding-top: 30px;
+
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+
+        h2 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+    }
+
     .overlay-bg1{
         background: url(../img/bg2.png);
         background-size: cover;

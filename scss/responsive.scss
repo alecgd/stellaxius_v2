@@ -101,12 +101,15 @@
     }
 
     .about-section {
+        padding: 50px 0 110px 0;
+
         .row {
             justify-content: center !important;
         }
 
-        .about-left {
-            margin-bottom: 30px;
+        .about-left,
+        .about-right {
+            display: none;
         }
     }
 
@@ -356,6 +359,11 @@
 }
 
 @media (max-width:480px) {
+    .section-title {
+        margin-bottom: 30px;
+        padding: 0;
+    }
+
     .dope-navbar {
         padding: 10px 15px;
         height: 60px;
@@ -366,6 +374,13 @@
             img {
                 max-width: 200px;
             }
+        }
+    }
+
+    .testimonial-section {
+
+        .single-testimonial {
+            width: 100%;
         }
     }
 
@@ -424,6 +439,13 @@
     .page-top-banner{
         h1{
             font-size: 42px;
+        }
+    }
+
+    .clients-section{
+        .single-logo {
+            flex: auto;
+            padding: 30px 0;
         }
     }
     .single-blog-post{

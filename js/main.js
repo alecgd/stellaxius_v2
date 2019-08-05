@@ -118,19 +118,19 @@
 
 
   $("#testimonial-carusel").owlCarousel({
-    items: 2,
+    items: 1,
     loop: true,
     margin: 30,
     dots: true,
     autoplayHoverPause: true,
-    smartSpeed: 500,
+    smartSpeed: 800,
     autoplay: true,
     responsive: {
       0: {
         items: 1
       },
       768: {
-        items: 2
+        items: 1
       }
     }
   });

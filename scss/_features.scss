@@ -35,6 +35,21 @@
         padding: 18px 0;
     }
 
+}
+
+/* =================================== */
+/*  Clients Styles 
+/* =================================== */
+.clients-section {
+    border-top: 1px solid $silver;
+    padding: 38px 0;
+
+    .align-item-center {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
     .single-logo {
         text-align: center;
 
@@ -61,92 +76,163 @@
             }
         }
     }
+
 }
 
-.feature-section {
-    background: url(../img/feature-bg.png)center no-repeat;
-    background-size: cover;
+.kc-section {
 
-    .header-left {
-        h1 {
-            padding-bottom: 30px;
-            font-size: 50px;
-            text-transform: capitalize;
+    .form-news-kc {
+        position: relative;
+        background-color: $white;
+        border-radius: 2px;
+        -webkit-box-shadow: 0 6px 30px 0px rgba(0, 0, 0, 0.20);
+        -moz-box-shadow: 0 6px 30px 0px rgba(0, 0, 0, 0.20);
+        box-shadow: 0 6px 30px 0px rgba(0, 0, 0, 0.20);
+        padding: 40px;
+
+        h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
         }
-    }
 
-    .feature-wrap {
-        padding-top: 60px;
+        .f-news {
+            background: #F3FAFD;
+            padding: 30px;
+            text-align: left;
+
+            label {
+                font-size: 16px;
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .input-field {
+                border: 1px solid $silver;
+                font-size: 16px;
+                padding: 13px 20px;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .label-check {
+                font-size: 12px;
+                line-height: 16px;
+                margin-bottom: 20px;
+
+                .optedin-check {
+                    margin-right: 10px;
+                }
+                a {
+                    color: $primary-color;
+                }
+            }
+        }
     }
 }
 
 .features-wrap {
     .single-feature {
-        background: $white;
-        border-radius: 5px;
-        padding: 40px;
-        margin-bottom: 30px;
-        @include transition();
+        position: relative;
+        background-color: $white;
+        border-radius: 2px;
+        -webkit-box-shadow: 0 6px 30px 0px rgba(0, 0, 0, 0.20);
+        -moz-box-shadow: 0 6px 30px 0px rgba(0, 0, 0, 0.20);
+        box-shadow: 0 6px 30px 0px rgba(0, 0, 0, 0.20);
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        margin-bottom: 20px;
 
-        span {
-            font-size: 35px;
-            color: $primary-color;
-            padding-bottom: 25px;
-            display: inline-block;
-        }
+        .img-post-kc {
+            
+            span {
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                font-size: 10px;
+                text-transform: uppercase;
+                font-weight: bold;
 
-        h3 {
-            margin-bottom: 15px;
-            font-weight: 400;
-        }
-
-        h5 {
-            margin-bottom: 10px;
-        }
-
-        p {
-            margin-bottom: 0px;
-            line-height: 1.5em;
-        }
-
-        &:hover {
-            box-shadow: 0px 30px 90px rgba($primary-color, 0.14) !important;
-
-            span,
-            p,
-            h3,
-            h5 {
-                color: $white;
+                /* =================================== */
+                /*  Categories Styles 
+                /* =================================== */
+                .category-salesforce{
+                    background: #0070D2;
+                    color: $white;
+                    padding: 2px 5px;
+                }
+                
+                .category-news {
+                    background: #00BC9D;
+                    color: $white;
+                    padding: 2px 5px;
+                }
+                .category-salesforce-certifications {
+                    background: #FF9D00;
+                    color: $white;
+                    padding: 2px 5px;
+                }
+                .category-pardot {
+                    background: #FF4B39;
+                    color: $white;
+                    padding: 2px 5px;
+                }
             }
         }
 
-        .overlay-bg {
-            @extend .gradient-bg;
-            border-radius: 5px;
-            opacity: 0;
-            @include transition();
-        }
+        .content-post-kc {
+            padding: 20px;
 
-        &:hover {
-            background: transparent;
-
-            .overlay-bg {
-                opacity: 1;
+            a, h3 {
+                color: inherit;
+            
+                &:hover {
+                    color: $primary-color;
+                   }
             }
 
-            span,
-            h3,
-            h5,
+            h3 {
+                font-size: 20px;
+                margin-bottom: 15px;
+                font-weight: bold;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                max-height: 88px;      /* fallback */
+                -webkit-line-clamp: 2; /* number of lines to show */
+                -webkit-box-orient: vertical;
+            }
+    
             p {
-                position: relative;
+                margin-bottom: 0px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                max-height: 88px;      /* fallback */
+                -webkit-line-clamp: 4; /* number of lines to show */
+                -webkit-box-orient: vertical;
             }
         }
+
+        &:hover {
+            -webkit-transform: translateY(-10px);
+            -moz-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+            -o-transform: translateY(-10px);
+            transform: translateY(-10px);
+            -webkit-box-shadow: 0 10px 50px -12px rgba(0, 0, 0, 0.50);
+            -moz-box-shadow: 0 10px 50px -12px rgba(0, 0, 0, 0.50);
+            box-shadow: 0 10px 50px -12px rgba(0, 0, 0, 0.50);
+        }
+        
     }
 }
 
 .explore-section {
     background: url(../img/img_efeito_bg_1.svg) right top no-repeat;
     background-size: cover;
+    padding-top: 150px;
 
     .overlay-bg {
         background: linear-gradient(to right, #000, rgba(#eb8fa9, 0));
