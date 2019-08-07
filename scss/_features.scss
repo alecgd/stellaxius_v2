@@ -93,6 +93,12 @@
         h3 {
             font-size: 28px;
             margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 25px;
         }
 
         .f-news {
@@ -107,11 +113,17 @@
             }
 
             .input-field {
-                border: 1px solid $silver;
+                border: 1px solid $silver-2;
                 font-size: 16px;
                 padding: 13px 20px;
                 width: 100%;
                 margin-bottom: 20px;
+                border-radius: 2px;
+
+                &:focus {
+                    border: 1px solid $black;
+                    outline: none;
+                }
             }
 
             .label-check {
@@ -210,6 +222,7 @@
     
             p {
                 margin-bottom: 0px;
+                line-height: 18px;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 display: -webkit-box;
