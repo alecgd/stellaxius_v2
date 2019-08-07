@@ -101,10 +101,18 @@
     }
 
     .about-section {
+
         padding: 50px 0 110px 0;
 
         .row {
             justify-content: center !important;
+
+            .text-center {
+                h2 {
+                    font-size: 30px;
+                    font-weight: 500;
+                }
+            }
         }
 
         .about-left,
@@ -194,17 +202,27 @@
     }
 
     .footer-section {
-        .footer-left {
-            text-align: center !important;
-            margin-bottom: 10px;
 
-            .copyright-text {
-                text-align: center !important;
+        .copyright-text {
+            text-align: center !important;
+        }
+
+        .container {
+
+            .row {
+                padding: 0;
             }
         }
 
+        .footer-left,
+        .general,
+        .social,
+        .language,
+        .contact-us {
+            margin-bottom: 20px;
+        }
+
         #social {
-            text-align: center;
 
             li {
                 &:first-child {
@@ -216,7 +234,6 @@
         }
 
         .footer-menu {
-            text-align: center;
 
             li {
                 &:first-child {
@@ -256,6 +273,7 @@
 
 @media (max-width:767px) {
     .banner-section {
+
         .banner-left {
             text-align: center !important;
             margin-bottom: 40px;
@@ -353,9 +371,6 @@
         padding-left: 15px;
         padding-right: 15px;
     }
-    .footer-cols,.copyright-text,#social{
-        text-align: center!important;
-    }
 }
 
 @media (max-width:480px) {
@@ -401,10 +416,75 @@
         height: auto;
         padding: 10px 0;
         line-height: 33px;
+        z-index: 1001;
     }
 
     .breakpoint-on .dopenav ul li.has-down>a:after {
         line-height: 70px;
+    }
+
+    .breakpoint-on {
+
+        .dopenav {
+
+            .active {
+                
+                .dropdown {
+                    display: block;
+
+                    .row {
+
+                        .card {
+                            margin: 10px 0 17px;
+
+                            a {
+                                padding: 0;
+                            }
+
+                            .card-body {
+                                padding: 10px;
+                                h5 {
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                }
+
+                                p {
+                                    color: #2F3542;
+                                    font-weight: 400;
+                                    line-height: 16px;
+                                }
+
+                                .video-btn {
+                                    display: none;
+                                }
+                            }
+                        }
+
+                        .card-1,
+                        .card-img-top {
+                            display:none;
+                        }
+
+                        ul {
+
+                            li {
+                                padding: 10px;
+                                text-align: center;
+
+                                a {
+                                    span {
+                                        display: none;
+                                    }
+                                    p {
+                                        font-weight: normal;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .dope-nav-container .active,
@@ -413,13 +493,9 @@
         line-height: 33px;
         height: auto;
         padding: 10px 0;
+        
     }
     
-    .single-counter {
-        h2 {
-            font-size: 30px !important;
-        }
-    }
     .dload-btn {
         display: flex;
         flex-direction: column;
@@ -436,6 +512,105 @@
 }
 
 @media(max-width:417px){
+
+    .section-gap-full {
+        padding: 50px 0;
+    }
+    .kc-section {
+        .container {
+
+            .row {
+
+                .form-news-kc {
+                    padding: 20px;
+
+                    h3 {
+                        font-size: 22px;
+                        font-weight: 600;
+                    }
+
+                    .f-news {
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .banner-section {
+        .banner-left {
+            h1 {
+                font-size: 36px !important;
+            }
+        }
+    }
+
+    .explore-section {
+        padding-top: 150px;
+
+        .container {
+
+            .row {
+
+                .explore-right {
+                    margin-top: 30px;
+
+                    .badge-experience-2 {
+                        left:0;
+                        right:0;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    .single-counter {
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    .testimonial-section {
+
+        .single-testimonial  {
+
+            .details {
+
+                p {
+                    font-size: 15px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+
+    .clients-section {
+        padding: 15px 0;
+    }
+
+    .service-section {
+
+        .row {
+
+            .single-service {
+                padding: 0px 15px 20px 15px;
+
+                .row {
+
+                    .img-services-home-1,
+                    .img-services-home-2 {
+                        margin: 0;
+
+                        img {
+                            position: relative;
+                        }
+                    }
+
+                    .text-center {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
     .page-top-banner{
         h1{
             font-size: 42px;

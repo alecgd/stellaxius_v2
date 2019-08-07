@@ -194,7 +194,6 @@
     display: inline-block;
     clear: both;
     position: inherit;
-    z-index: 10;
 
     .primary-btn {
         min-width: auto;
@@ -205,12 +204,10 @@
 
 .dopenav ul li.cn-dropdown-item {
     position: relative;
-    z-index: 10;
 }
 
 .dopenav ul li.cn-dropdown-item ul li {
     position: relative;
-    z-index: 10;
 }
 
 .dopenav ul li ul li {
@@ -813,7 +810,6 @@
     display: block;
     position: relative;
     clear: both;
-    z-index: 10;
 }
 
 .breakpoint-on .dopenav ul li a {
@@ -844,7 +840,7 @@
 }
 
 .breakpoint-on .dd-trigger {
-    height: 38px;
+    height: 70px;
     top: 0;
     left: 0;
     right: 0;
