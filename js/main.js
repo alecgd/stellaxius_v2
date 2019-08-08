@@ -38,6 +38,36 @@
 
   });
 
+  // ------------------------------------------------------------------------------ //
+  // Cookie Bar 
+  // ------------------------------------------------------------------------------ //
+
+  $(function(){// document.ready shorthand
+    $('.cookie-btn-acpt').click(function() {
+        $('#cookie-bar').fadeOut('3000',function(){//use 3000 in place of 300m
+            $('#cookie-bar').remove();
+        });
+        $('.noscroll').removeClass( 'noscroll' );  
+        return false;
+    });
+  });
+
+  $(document).ready(function() {
+    // Hide the div
+    $("#cookie-bar").hide();
+    // Show the div in 5s
+    $("#cookie-bar").delay(5000).fadeIn(500);
+    $('body').addClass( 'noscroll' );
+  });
+
+  $(function(){// document.ready shorthand
+    $('.open-cookies').click(function() {
+        $('#container-pref').fadeOut('3000',function(){//use 3000 in place of 300m
+            $('#container-pref').remove();
+        });
+        return false;
+    });
+  });
 
   // ------------------------------------------------------------------------------ //
   // Active Menu 
