@@ -103,8 +103,8 @@
                     risus nibh iaculis sapien, eu aliquet orci mauris in erat.</p>
             </div>
             <div class="col-lg-3 settings-cookies">
-                <a href="javascript:void(0)" class="open-cookies video-btn link-btn" id="btn-show-hide-pref">Privacy Preferences</a>
-                <a href="javascript:void(0)" class="primary-btn cookie-btn-acpt">Accept and close</a>
+                <a href="javascript:void(0)" class="open-cookies video-btn link-btn" id="btn-show-hide-pref" onClick="gtag('event', 'pref_cookies', {'event_label': 'link_preferences_cookies', 'event_category': 'link', 'non_interaction': true});">Privacy Preferences</a>
+                <a href="javascript:void(0)" class="primary-btn cookie-btn-acpt" onClick="gtag('event', 'accept_cookies', {'event_label': 'btn_accept_cookies', 'event_category': 'link', 'non_interaction': true});">Accept and close</a>
             </div>
         </div>
     </div>
@@ -779,7 +779,7 @@
     <!-- Open Settings Cookies -->
     <div class="open-sett-cookies">
         <i class="fas fa-cookie-bite"></i>
-        <a href="javascript:void(0)" id="btn-show-hide-pref3">
+        <a href="javascript:void(0)" id="btn-show-hide-pref3" onClick="gtag('event', 'open_cookies_sett', {'event_label': 'link_open_cookies_settings', 'event_category': 'link', 'non_interaction': true});">
             <div class="line-1">COOKIES <span class="line-2">SETTINGS</span></div>
         </a>
     </div>
