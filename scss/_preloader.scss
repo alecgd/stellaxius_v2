@@ -172,6 +172,7 @@
   .noscroll {
     overflow: hidden;
   }
+
   #cookie-bar {
     position: fixed;
     top: 0;
@@ -208,7 +209,6 @@
         border-radius: 5px 5px 0px 0px;
         color: #000;
         margin: 0;
-        display: none;
 
         i {
           position: absolute;
@@ -250,15 +250,10 @@
           background: #EFEFEF;
           border-radius: 5px 0px 0px 0;
           text-align: center;
-
-          .row {
-            height: 62px;
-            border-bottom: 1px solid #95a5a6;
-            margin: 0;
+          border-bottom: 1px solid #95a5a6;
 
             .switch {
               position: relative;
-              display: inline-block;
               width: 60px;
               height: 34px;
               margin: 0 auto;
@@ -317,8 +312,8 @@
             .slider.round:before {
               border-radius: 50%;
             }
-          }
         }
+        
       }
 
       .text-cookies {
@@ -351,4 +346,39 @@
         }
       }
     }
+  }
+
+  .open-sett-cookies {
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    left: 10px;
+    width: 110px;
+    height: 40px;
+    background: $black;
+    border-radius: 5px 5px 0px 0px;
+    padding: 10px;
+
+    i {
+      color: $silver;
+      float: left;
+    }
+
+    a {
+      color: $silver;
+      float: right;
+      width: 63px;
+
+      .line-1 {
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 10px;
+      }
+
+      .line-2 {
+        font-size: 10px;
+        font-weight: 100;
+      }
+    }
+
   }

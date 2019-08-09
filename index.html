@@ -53,35 +53,34 @@
 
     <!-- Cookie Bar -->
     <div id="cookie-bar">
-        
         <div class="row expl-cookies">
-            <div class="row sett-cookies" id="container-pref">
-                <i class="video-btn link-btn far fa-times-circle"></i>
+            <div class="row sett-cookies" id="container-pref" style="display: none;">
+                <i class="video-btn link-btn far fa-times-circle" id="btn-show-hide-pref2"></i>
                 <h3>Privacy Preferences</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus, urna vel lobortis feugiat, 
                             risus nibh iaculis sapien, eu aliquet orci mauris in erat. Mauris sit amet mattis ante. Sed 
                             tortor dui, condimentum ut condimentum ut, aliquam sit amet quam. Etiam non viverra nunc, eu 
                             volutpat nunc. Proin non viverra magna.</p>
-                <div class="col-lg-9 list-cookies">
+                <div class="col-9 list-cookies">
                     <h5>Preference</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus, urna vel lobortis feugiat, risus nibh iaculis.</p>
+                </div>
+                <div class="col-3 control-cookies">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-9 list-cookies">
                     <h5>Marketing</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus, urna vel lobortis.</p>
                 </div>
-                <div class="col-lg-3 control-cookies">
-                    <div class="row">
-                        <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-
-                    <div class="row">
-                        <label class="switch">
-                            <input type="checkbox" checked>
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
+                <div class="col-3 control-cookies">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
                 </div>
             </div>
             <div class="col-lg-9 text-cookies">
@@ -95,11 +94,12 @@
                     risus nibh iaculis sapien, eu aliquet orci mauris in erat.</p>
             </div>
             <div class="col-lg-3 settings-cookies">
-                <a href="javascript:void(0)" class="open-cookies video-btn link-btn">Privacy Preferences</a>
+                <a href="javascript:void(0)" class="open-cookies video-btn link-btn" id="btn-show-hide-pref">Privacy Preferences</a>
                 <a href="javascript:void(0)" class="primary-btn cookie-btn-acpt">Accept and close</a>
             </div>
         </div>
     </div>
+    <!-- End Cookie Bar -->
 
     <!-- Start header section -->
     <header class="header-area" id="header-area">
@@ -767,9 +767,20 @@
     </footer>
     <!-- End footer section -->
 
+    <!-- Open Settings Cookies -->
+    <div class="open-sett-cookies">
+        <i class="fas fa-cookie-bite"></i>
+        <a href="javascript:void(0)" id="btn-show-hide-pref3">
+            <div class="line-1">COOKIES <span class="line-2">SETTINGS</span></div>
+        </a>
+    </div>
+    <!-- End Open Settings Cookies -->
+    
+    <!-- Scrol Top -->
     <div class="scroll-top">
         <i class="ti-angle-up"></i>
     </div>
+     <!-- End Scrol Top -->
 
     <!-- JS ============================================= -->
     <script src="js/vendor/jquery-2.2.4.min.js"></script>
