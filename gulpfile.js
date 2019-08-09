@@ -72,16 +72,10 @@ var build = gulp.parallel(style, watch);
 /**
  * gh-pages
  */
-var gulp   = require('gulp');
-  var deploy = require('gulp-gh-pages');
+const {src, task}= require('gulp');
+const ghPages = require('gulp-gh-pages');
 
-  gulp.task('deploy', function () {
-    return gulp.src("./dist/**/*")
-      .pipe(deploy({ 
-        remoteUrl: "https://github.com/alecgd/alecgd.github.io.git",
-        branch: "master"
-      }))
-  });
+task('deploy', () => src('./dist/**/*').pipe(ghPages()));
 
 /*
  * You can still use `gulp.task` to expose tasks
