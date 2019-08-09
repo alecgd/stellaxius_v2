@@ -72,16 +72,14 @@ var build = gulp.parallel(style, watch);
 /**
  * gh-pages
  */
-var gulp   = require('gulp');
-  var deploy = require('gulp-gh-pages');
-
-  gulp.task('deploy', function () {
-    return gulp.src("./prod/**/*")
-      .pipe(deploy({ 
-        remoteUrl: "https://github.com/alecgd/alecgd.github.io.git",
-        branch: "master"
-      }))
-  });
+var deploy = require("gulp-gh-pages");
+var options = { 
+    remoteUrl: "https://github.com/alecgd/alecgd.github.io.git",
+    branch: "master"};
+gulp.task('deploy', function () {
+    gulp.src("dist/**/*.*")
+        .pipe(deploy(options));
+});
 
 /*
  * You can still use `gulp.task` to expose tasks
