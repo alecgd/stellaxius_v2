@@ -68,6 +68,20 @@ exports.style = style;
  * Specify if tasks run in series or parallel using `gulp.series` and `gulp.parallel`
  */
 var build = gulp.parallel(style, watch);
+
+/**
+ * gh-pages
+ */
+var gulp        = require('gulp');
+var deploy      = require('gulp-gh-pages');
+
+/**
+ * Push build to gh-pages
+ */
+gulp.task('deploy', function () {
+  return gulp.src("./dist/**/*")
+    .pipe(deploy())
+});
  
 /*
  * You can still use `gulp.task` to expose tasks
