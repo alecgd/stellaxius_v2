@@ -650,9 +650,27 @@
         }
     }
     .page-top-banner{
-        h1{
-            font-size: 42px;
+
+        .container {
+
+            .align-items-center {
+                padding-top: 80px;
+
+                .banner-left {
+                    text-align: center!important;
+                    margin-bottom: 40px;
+
+                    h1 {
+                        font-size: 36px
+                    }
+                }
+
+                .banner-right {
+                    padding-top: 40px;
+                }
+            }
         }
+        
     }
 
     .clients-section{
