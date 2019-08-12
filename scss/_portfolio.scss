@@ -52,6 +52,34 @@
 }
 
 .product-detials-section{
+    .breadcrumb {
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        z-index: 2;
+        position: absolute;
+        top: 10px;
+        width: 100%;
+  
+        ul {
+          display: inline-flex;
+          font-size: 11px;
+          text-transform: uppercase;
+        }
+  
+        li {
+            line-height: 30px;
+
+            i {
+                padding: 0 5px;
+            }
+
+          a {
+            text-decoration: none!important;
+          }
+        }
+      }
+
     img{
         width: 100%;
     }
