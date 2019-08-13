@@ -295,6 +295,13 @@ $('#screenshot-carusel').owlCarousel({
 
   document.getElementById("btn-subscribe-news").disabled = true;
 
+  // ------------------------------------------------------------------------------ //
+  // Display select item dropdown
+  // ------------------------------------------------------------------------------ //
+
+  $('.dropdown-menu a').on('click', function(){    
+    $('.dropdown-toggle').html($(this).html());    
+  });
 
   // ------------------------------------------------------------------------------ //
   // Parallux Background 

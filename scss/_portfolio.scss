@@ -56,7 +56,7 @@
         background-color: transparent;
         padding: 0;
         margin: 0;
-        z-index: 2;
+        z-index: 1;
         position: absolute;
         top: 10px;
         width: 100%;
@@ -80,31 +80,103 @@
         }
       }
 
-    img{
-        width: 100%;
+    .details-left {
+        padding-right: 25px;
     }
+      
     .details-right{
-        padding-bottom:20px;
-        ul{
-            margin-bottom:20px;
-            li{
-                margin-bottom: 8px;
-                color:#000;
-                font-size: 16px;
-                font-weight: 500;
-                border-bottom:1px solid #eee;
-                padding-bottom:10px;
-                span{
-                    font-weight: 900;
-                }
-            }
+        padding-left: 25px;
+
+        img {
+            margin-top: 24px;
         }
-        p{
-            color:#000;
-            font-weight: 400;
-            &:last-child{
-                margin-bottom: 0px;
-            }
-        }        
     }
+
+    .img-service-pardot {
+        min-height: 240px;
+        margin-bottom: 30px;
+    }
+}
+
+.new-pardot-section,
+.support-pardot-section {
+    background: url(../img/img_effect_section_service_1.svg) center top no-repeat;
+    background-size: cover;
+    padding: 150px 0 0 0;
+
+    .details-left {
+
+        .section-title {
+            padding: 0;
+            margin-bottom: 25px;
+        }
+    }
+
+    .features-new-pardot {
+        background-color: $white;
+        border-radius: 2px;
+        -webkit-box-shadow: 0 6px 30px 0px rgba(0, 0, 0, 0.20);
+        -moz-box-shadow: 0 6px 30px 0px rgba(0, 0, 0, 0.20);
+        box-shadow: 0 6px 30px 0px rgba(0, 0, 0, 0.20);
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        padding: 30px;
+
+        &:hover {
+            -webkit-transform: translateY(-10px);
+            -moz-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+            -o-transform: translateY(-10px);
+            transform: translateY(-10px);
+            -webkit-box-shadow: 0 0px 50px 0px rgba(0, 0, 0, 0.50);
+            -moz-box-shadow: 0 0px 50px 0px rgba(0, 0, 0, 0.50);
+            box-shadow: 0 0px 50px 0px rgba(0, 0, 0, 0.50);
+        }
+
+        i {
+            font-size: 70px;
+            background: linear-gradient(0deg, $black 0%, $secondary-color 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+	        -webkit-text-fill-color: transparent;
+        }
+
+        h4 {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+    }
+
+    .form-section-service {
+        background: #E8F5FB;
+        margin-bottom: 50px;
+
+        .f-service {
+            max-width: 920px;
+            margin: 0 auto;
+        }
+
+        .g-recaptcha {
+            display: inline-block;
+        }
+
+        .dropdown-toggle::after {
+            right: 20px;
+            position: absolute;
+            top: 25px;
+        }
+
+        .cta-btn {
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}
+
+.support-pardot-section {
+    background: $white;
+    padding: 100px 0 0 0;
 }

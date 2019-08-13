@@ -677,6 +677,40 @@
         
     }
 
+    .product-detials-section {
+
+        .details-left {
+            padding-right: 15px;
+            margin-bottom: 30px;
+        }
+        .details-right {
+            padding-left: 15px;
+        }
+    }
+
+    .new-pardot-section,
+    .support-pardot-section {
+        padding: 100px 0 0;
+
+        .details-left {
+
+            p {
+                text-align: center;
+            }
+
+            .section-title {
+
+                h2, p {
+                    text-align: center;
+                }
+            }
+        }
+
+        .features-new-pardot {
+            margin-bottom: 30px;
+        }
+    }
+
     .clients-section{
         .single-logo {
             flex: auto;
@@ -703,5 +737,9 @@
                 }
             }
         }
+    }
+    .g-recaptcha {
+        transform: scale(0.77);
+        -webkit-transform: scale(0.77);
     }
 }

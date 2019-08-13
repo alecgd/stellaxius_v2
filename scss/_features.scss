@@ -102,43 +102,6 @@
             background: #F3FAFD;
             padding: 30px;
             text-align: left;
-
-            label {
-                font-size: 16px;
-                display: block;
-                margin-bottom: 10px;
-            }
-
-            .input-field {
-                border: 1px solid $silver-2;
-                font-size: 16px;
-                padding: 13px 20px;
-                width: 100%;
-                margin-bottom: 20px;
-                border-radius: 2px;
-
-                &:focus {
-                    border: 1px solid $black;
-                    outline: none;
-                }
-            }
-
-            .label-check {
-                font-size: 12px;
-                line-height: 16px;
-                margin-bottom: 20px;
-
-                .optedin-check {
-                    margin-right: 10px;
-                }
-                a {
-                    color: $primary-color;
-                }
-            }
-
-            .google-captcha {
-                margin-bottom: 20px;
-            }
         }
     }
 }
@@ -472,5 +435,60 @@
             -moz-box-shadow: 0 7px 20px -10px #000;
             box-shadow: 0 7px 20px -10px #000;
         }
+    }
+}
+
+/* =================================== */
+/*  Form Styles 
+/* =================================== */
+label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-field,
+.drop-primary {
+    border: 1px solid $silver-2;
+    font-size: 16px;
+    padding: 13px 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 2px;
+
+    &:focus {
+        border: 1px solid $black;
+        outline: none;
+    }
+}
+
+.label-check {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 20px;
+
+    .optedin-check {
+        margin-right: 10px;
+    }
+    a {
+        color: $primary-color;
+    }
+}
+
+.google-captcha {
+    margin-bottom: 20px;
+
+    .g-recaptcha {
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+    }
+}
+
+.drop-primary {
+    background-color: $white;
+    text-align: left;
+    color: $black;
+    &:hover {
+        color: $black;
     }
 }
