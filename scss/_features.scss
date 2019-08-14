@@ -106,104 +106,102 @@
     }
 }
 
-.features-wrap {
-    .single-feature {
-        position: relative;
-        background-color: $white;
-        border-radius: 2px;
-        -webkit-box-shadow: 0 6px 30px 0px rgba(0, 0, 0, 0.20);
-        -moz-box-shadow: 0 6px 30px 0px rgba(0, 0, 0, 0.20);
-        box-shadow: 0 6px 30px 0px rgba(0, 0, 0, 0.20);
-        -webkit-transition: all 0.4s ease;
-        -moz-transition: all 0.4s ease;
-        -o-transition: all 0.4s ease;
-        transition: all 0.4s ease;
-        margin-bottom: 20px;
+.single-feature {
+    position: relative;
+    background-color: $white;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 6px 30px 0px rgba(0, 0, 0, 0.20);
+    -moz-box-shadow: 0 6px 30px 0px rgba(0, 0, 0, 0.20);
+    box-shadow: 0 6px 30px 0px rgba(0, 0, 0, 0.20);
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    margin-bottom: 20px;
 
-        .img-post-kc {
-            
-            span {
-                position: absolute;
-                bottom: 10px;
-                left: 10px;
-                font-size: 10px;
-                text-transform: uppercase;
-                font-weight: bold;
-
-                /* =================================== */
-                /*  Categories Styles 
-                /* =================================== */
-                .category-salesforce{
-                    background: #0070D2;
-                    color: $white;
-                    padding: 2px 5px;
-                }
-                
-                .category-news {
-                    background: #00BC9D;
-                    color: $white;
-                    padding: 2px 5px;
-                }
-                .category-salesforce-certifications {
-                    background: #FF9D00;
-                    color: $white;
-                    padding: 2px 5px;
-                }
-                .category-pardot {
-                    background: #FF4B39;
-                    color: $white;
-                    padding: 2px 5px;
-                }
-            }
-        }
-
-        .content-post-kc {
-            padding: 20px;
-
-            a, h3 {
-                color: inherit;
-            
-                &:hover {
-                    color: $primary-color;
-                   }
-            }
-
-            h3 {
-                font-size: 20px;
-                margin-bottom: 15px;
-                font-weight: bold;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                max-height: 88px;      /* fallback */
-                -webkit-line-clamp: 2; /* number of lines to show */
-                -webkit-box-orient: vertical;
-            }
-    
-            p {
-                margin-bottom: 0px;
-                line-height: 18px;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                max-height: 88px;      /* fallback */
-                -webkit-line-clamp: 4; /* number of lines to show */
-                -webkit-box-orient: vertical;
-            }
-        }
-
-        &:hover {
-            -webkit-transform: translateY(-10px);
-            -moz-transform: translateY(-10px);
-            -ms-transform: translateY(-10px);
-            -o-transform: translateY(-10px);
-            transform: translateY(-10px);
-            -webkit-box-shadow: 0 10px 50px -12px rgba(0, 0, 0, 0.50);
-            -moz-box-shadow: 0 10px 50px -12px rgba(0, 0, 0, 0.50);
-            box-shadow: 0 10px 50px -12px rgba(0, 0, 0, 0.50);
-        }
+    .img-post-kc {
         
+        span {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+
+            /* =================================== */
+            /*  Categories Styles 
+            /* =================================== */
+            .category-salesforce{
+                background: #0070D2;
+                color: $white;
+                padding: 2px 5px;
+            }
+            
+            .category-news {
+                background: #00BC9D;
+                color: $white;
+                padding: 2px 5px;
+            }
+            .category-salesforce-certifications {
+                background: #FF9D00;
+                color: $white;
+                padding: 2px 5px;
+            }
+            .category-pardot {
+                background: #FF4B39;
+                color: $white;
+                padding: 2px 5px;
+            }
+        }
     }
+
+    .content-post-kc {
+        padding: 20px;
+
+        a, h3 {
+            color: inherit;
+        
+            &:hover {
+                color: $primary-color;
+                }
+        }
+
+        h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            max-height: 88px;      /* fallback */
+            -webkit-line-clamp: 2; /* number of lines to show */
+            -webkit-box-orient: vertical;
+        }
+
+        p {
+            margin-bottom: 0px;
+            line-height: 18px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            max-height: 88px;      /* fallback */
+            -webkit-line-clamp: 4; /* number of lines to show */
+            -webkit-box-orient: vertical;
+        }
+    }
+
+    &:hover {
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+        transform: translateY(-10px);
+        -webkit-box-shadow: 0 10px 50px -12px rgba(0, 0, 0, 0.50);
+        -moz-box-shadow: 0 10px 50px -12px rgba(0, 0, 0, 0.50);
+        box-shadow: 0 10px 50px -12px rgba(0, 0, 0, 0.50);
+    }
+    
 }
 
 .explore-section {

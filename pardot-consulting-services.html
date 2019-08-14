@@ -269,7 +269,7 @@
                 <div class="col-lg-7 banner-left">
                     <h1>Pardot Consulting Services</h1>
                     <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit integer velit purus, posuere non gravida sed.</h2>
-                    <a class="secondary-btn" href="#services" onClick="gtag('event', 'cta_header_home', {'event_label': 'button_cta_header', 'event_category': 'button', 'non_interaction': true});">KNOW MORE</a>
+                    <a class="secondary-btn" href="#services" onClick="gtag('event', 'cta_header_pardot', {'event_label': 'button_cta_pardot', 'event_category': 'button', 'non_interaction': true});">KNOW MORE</a>
                 </div>
                 <div class="col-lg-5 text-right banner-right">
                     <img class="img-fluid" src="img/img_header_service_1.svg" alt="Pardot Consulting Services">
@@ -289,9 +289,9 @@
         <div class="breadcrumb">
             <div class="container">
                 <ul>
-                    <li><a href="#" class="link-btn"><i class="ti-home"></i>Home</a></li>
-                    <li><a href="#" class="link-btn"><i class="ti-arrow-circle-right"></i>What We Do</a></li>
-                    <li><a href="#" class="link-btn"><i class="ti-arrow-circle-right"></i>Salesforce Consulting & Implementation</a></li>
+                    <li><a href="#" class="link-btn" onClick="gtag('event', 'link_breadcrumb_home', {'event_label': 'link_breadcrumb_home', 'event_category': 'breadcrumb', 'non_interaction': true});"><i class="ti-home"></i>Home</a></li>
+                    <li><a href="#" class="link-btn" onClick="gtag('event', 'link_breadcrumb_what_we_do', {'event_label': 'link_breadcrumb_what_we_do', 'event_category': 'breadcrumb', 'non_interaction': true});"><i class="ti-arrow-circle-right"></i>What We Do</a></li>
+                    <li><a href="#" class="link-btn" onClick="gtag('event', 'link_breadcrumb_sl_cons_imp', {'event_label': 'link_breadcrumb_salesforce_consulting_implementation', 'event_category': 'breadcrumb', 'non_interaction': true});"><i class="ti-arrow-circle-right"></i>Salesforce Consulting & Implementation</a></li>
                     <li><i class="ti-arrow-circle-right"></i>Pardot Consulting Services</li>
                 </ul>
             </div>
@@ -309,7 +309,7 @@
                     </div>
                     <h3><b>New</b> to Pardot?</h3>
                     <p>If you are looking for a marketing automation solution, Pardot can be the tool your marketing strategy needs.</p>
-                    <a class="secondary-btn" href="#services-new-pardot" onClick="gtag('event', 'service_home_1', {'event_label': 'box_service_1', 'event_category': 'button', 'non_interaction': true});">OUR IMPLEMENTATION OPTIONS</a>
+                    <a class="secondary-btn" href="#services-new-pardot" onClick="gtag('event', 'btn_new_pardot', {'event_label': 'button_new_to_pardot', 'event_category': 'new_pardot', 'non_interaction': true});">OUR IMPLEMENTATION OPTIONS</a>
                 </div>
                 <div class="col-lg-6 details-right text-center">
                     <div class="img-service-pardot">
@@ -317,7 +317,7 @@
                     </div>
                     <h3>Need Pardot <b>Support</b>?</h3>
                     <p>We offer an assessment of Pardot to review your existing implementation and provide suggestions on what can be improved for better performance.</p>
-                    <a class="secondary-btn" href="#services-support-pardot" onClick="gtag('event', 'service_home_1', {'event_label': 'box_service_1', 'event_category': 'button', 'non_interaction': true});">OUR SUPPORT OPTIONS</a>
+                    <a class="secondary-btn" href="#services-support-pardot" onClick="gtag('event', 'btn_support_pardot', {'event_label': 'button_need_support_pardot', 'event_category': 'support_pardot', 'non_interaction': true});">OUR SUPPORT OPTIONS</a>
                 </div>
             </div>
         </div>
@@ -357,6 +357,7 @@
                         <p>Duis risus ex, posuere sed aliquam eget, auctor nec nulla. In accumsan tortor sit amet 
                             venenatis condimentum. Quisque ac leo ut nisl sollicitudin bibendum vel a odio. 
                             Curabitur eleifend ante in arcu scelerisque lobortis vitae sit amet felis.</p>
+                            <a href="pardot-consulting-services.html" class="video-btn link-btn" onClick="gtag('event', 'link_new_stan_imp', {'event_label': 'link_new_pardot_standard_implementation', 'event_category': 'new_pardot', 'non_interaction': true});">Read more</a>
                     </div>
                 </div>
                 <div class="col-lg-4 ">
@@ -366,6 +367,7 @@
                         <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos 
                             himenaeos. Nam vel consequat ante. Nulla porta, mauris quis aliquam dictum, urna 
                             odio accumsan quam, eu venenatis enim nisi vel lectus.</p>
+                        <a href="pardot-consulting-services.html" class="video-btn link-btn" onClick="gtag('event', 'link_mkt_trans', {'event_label': 'link_new_pardot_marketing_transformation', 'event_category': 'new_pardot', 'non_interaction': true});">Read more</a>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -375,6 +377,7 @@
                         <p>Proin dolor est, congue non placerat non, luctus non tortor. Mauris dapibus leo 
                             ac velit blandit, et commodo lacus dapibus. Nam semper porta quam vitae finibus. 
                             Aenean non luctus arcu, a elementum elit. Morbi posuere dolor ut iaculis.</p>
+                            <a href="pardot-consulting-services.html" class="video-btn link-btn" onClick="gtag('event', 'link_migration', {'event_label': 'link_new_pardot_migration', 'event_category': 'new_pardot', 'non_interaction': true});">Read more</a>
                     </div>
                 </div>
             </div>
@@ -394,30 +397,30 @@
                     <div class="row">
                         <div class="col-lg-4">
                             <label>First Name</label>
-                            <input class="input-field" type="text" name="first-name" required="required"  onClick="gtag('event', 'input_news_mail', {'event_label': 'input_email_newsletter', 'event_category': 'input', 'non_interaction': true});" />
+                            <input class="input-field" type="text" name="first-name" required="required"  onClick="gtag('event', 'input_fisrt_name', {'event_label': 'input_new_pardot_first_name', 'event_category': 'input', 'non_interaction': true});" />
                         </div>
                         <div class="col-lg-4">
                             <label>Last Name</label>
-                            <input class="input-field" type="text" name="last-name" required="required"  onClick="gtag('event', 'input_news_mail', {'event_label': 'input_email_newsletter', 'event_category': 'input', 'non_interaction': true});" />
+                            <input class="input-field" type="text" name="last-name" required="required"  onClick="gtag('event', 'input_last_name', {'event_label': 'input_new_pardot_last_name', 'event_category': 'input', 'non_interaction': true});" />
                         </div>
                         <div class="col-lg-4">
                             <label>Email</label>
-                            <input class="input-field" type="text" name="email" required="required"  onClick="gtag('event', 'input_news_mail', {'event_label': 'input_email_newsletter', 'event_category': 'input', 'non_interaction': true});" />
+                            <input class="input-field" type="text" name="email" required="required"  onClick="gtag('event', 'input_email', {'event_label': 'input_new_pardot_email', 'event_category': 'input', 'non_interaction': true});" />
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-4">
                             <label>Work Phone</label>
-                            <input class="input-field" type="text" name="work-phone" required="required"  onClick="gtag('event', 'input_news_mail', {'event_label': 'input_email_newsletter', 'event_category': 'input', 'non_interaction': true});" />
+                            <input class="input-field" type="text" name="work-phone" required="required"  onClick="gtag('event', 'input_work_phone', {'event_label': 'input_new_pardot_work_phone', 'event_category': 'input', 'non_interaction': true});" />
                         </div>
                         <div class="col-lg-4">
                             <label>Company Name</label>
-                            <input class="input-field" type="text" name="company" required="required"  onClick="gtag('event', 'input_news_mail', {'event_label': 'input_email_newsletter', 'event_category': 'input', 'non_interaction': true});" />
+                            <input class="input-field" type="text" name="company" required="required"  onClick="gtag('event', 'input_company', {'event_label': 'input_new_pardot_company', 'event_category': 'input', 'non_interaction': true});" />
                         </div>
                         <div class="col-lg-4">
                             <label>Company Sector</label>
                             <div class="dropdown">
-                                <button class="btn drop-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <button class="btn drop-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onClick="gtag('event', 'input_sector', {'event_label': 'input_new_pardot_sector', 'event_category': 'input', 'non_interaction': true});">
                                     Select here...
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -434,7 +437,7 @@
                     <input class="d-none" value="$$title$$" type="text" name="utm_content" />
 
                     <label class="label-check text-center">
-                        <input type="checkbox" class="optedin-check" name="optedin" value="Accepted" required="required" onClick="gtag('event', 'check_news_agr_pp', {'event_label': 'button_subscribe_news', 'event_category': 'input', 'non_interaction': true});">I agree with Stellaxius <a href="#">privacy policy</a>.
+                        <input type="checkbox" class="optedin-check" name="optedin" value="Accepted" required="required" onClick="gtag('event', 'check_news_agr_pp', {'event_label': 'check_new_pardot_agree_privacy_policy', 'event_category': 'input', 'non_interaction': true});">I agree with Stellaxius <a href="#">privacy policy</a>.
                     </label>
 
                     <div class="google-captcha text-center">
@@ -445,7 +448,7 @@
                             document.getElementById("btn-subscribe-news").disabled = false;
                         }
                     </script>
-                    <input class="video-btn cta-btn" type="submit" value="Request more information" id="btn-subscribe-news" onClick="gtag('event', 'btn_news_subscribe', {'event_label': 'button_subscribe_news', 'event_category': 'input', 'non_interaction': true});" />
+                    <input class="video-btn cta-btn" type="submit" value="Request more information" id="btn-subscribe-news" onClick="gtag('event', 'btn_request_inf', {'event_label': 'button_new_pardot_request_information', 'event_category': 'input', 'non_interaction': true});" />
                 </form>
                 <!-- End Form -->
             </div>
@@ -488,6 +491,7 @@
                         <p>Duis risus ex, posuere sed aliquam eget, auctor nec nulla. In accumsan tortor sit amet 
                             venenatis condimentum. Quisque ac leo ut nisl sollicitudin bibendum vel a odio. 
                             Curabitur eleifend ante in arcu scelerisque lobortis vitae sit amet felis.</p>
+                        <a href="pardot-consulting-services.html" class="video-btn link-btn" onClick="gtag('event', 'link_support_pardot_assess', {'event_label': 'link_need_support_assessment', 'event_category': 'support_pardot', 'non_interaction': true});">Read more</a>
                     </div>
                 </div>
                 <div class="col-lg-4 ">
@@ -497,6 +501,7 @@
                         <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos 
                             himenaeos. Nam vel consequat ante. Nulla porta, mauris quis aliquam dictum, urna 
                             odio accumsan quam, eu venenatis.</p>
+                        <a href="pardot-consulting-services.html" class="video-btn link-btn" onClick="gtag('event', 'link_support_hours_pack', {'event_label': 'link_need_support_hours_packages', 'event_category': 'support_pardot', 'non_interaction': true});">Read more</a>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -506,6 +511,7 @@
                         <p>Proin dolor est, congue non placerat non, luctus non tortor. Mauris dapibus leo 
                             ac velit blandit, et commodo lacus dapibus. Nam semper porta quam vitae finibus. 
                             Aenean non luctus arcu, a elementum elit. Morbi posuere dolor ut iaculis.</p>
+                        <a href="pardot-consulting-services.html" class="video-btn link-btn" onClick="gtag('event', 'link_support_templates', {'event_label': 'link_need_support_templates', 'event_category': 'support_pardot', 'non_interaction': true});">Read more</a>
                     </div>
                 </div>
             </div>
@@ -525,30 +531,30 @@
                     <div class="row">
                         <div class="col-lg-4">
                             <label>First Name</label>
-                            <input class="input-field" type="text" name="first-name" required="required"  onClick="gtag('event', 'input_news_mail', {'event_label': 'input_email_newsletter', 'event_category': 'input', 'non_interaction': true});" />
+                            <input class="input-field" type="text" name="first-name" required="required" onClick="gtag('event', 'input_fisrt_name', {'event_label': 'input_support_pardot_first_name', 'event_category': 'input', 'non_interaction': true});" />
                         </div>
                         <div class="col-lg-4">
                             <label>Last Name</label>
-                            <input class="input-field" type="text" name="last-name" required="required"  onClick="gtag('event', 'input_news_mail', {'event_label': 'input_email_newsletter', 'event_category': 'input', 'non_interaction': true});" />
+                            <input class="input-field" type="text" name="last-name" required="required" onClick="gtag('event', 'input_last_name', {'event_label': 'input_support_pardot_last_name', 'event_category': 'input', 'non_interaction': true});" />
                         </div>
                         <div class="col-lg-4">
                             <label>Email</label>
-                            <input class="input-field" type="text" name="email" required="required"  onClick="gtag('event', 'input_news_mail', {'event_label': 'input_email_newsletter', 'event_category': 'input', 'non_interaction': true});" />
+                            <input class="input-field" type="text" name="email" required="required" onClick="gtag('event', 'input_email', {'event_label': 'input_support_pardot_email', 'event_category': 'input', 'non_interaction': true});" />
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-4">
                             <label>Work Phone</label>
-                            <input class="input-field" type="text" name="work-phone" required="required"  onClick="gtag('event', 'input_news_mail', {'event_label': 'input_email_newsletter', 'event_category': 'input', 'non_interaction': true});" />
+                            <input class="input-field" type="text" name="work-phone" required="required" onClick="gtag('event', 'input_work_phone', {'event_label': 'input_support_pardot_work_phone', 'event_category': 'input', 'non_interaction': true});" />
                         </div>
                         <div class="col-lg-4">
                             <label>Company Name</label>
-                            <input class="input-field" type="text" name="company" required="required"  onClick="gtag('event', 'input_news_mail', {'event_label': 'input_email_newsletter', 'event_category': 'input', 'non_interaction': true});" />
+                            <input class="input-field" type="text" name="company" required="required" onClick="gtag('event', 'input_company', {'event_label': 'input_support_pardot_company', 'event_category': 'input', 'non_interaction': true});" />
                         </div>
                         <div class="col-lg-4">
                             <label>Company Sector</label>
                             <div class="dropdown">
-                                <button class="btn drop-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <button class="btn drop-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onClick="gtag('event', 'input_sector', {'event_label': 'input_support_pardot_sector', 'event_category': 'input', 'non_interaction': true});">
                                     Select here...
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -565,7 +571,7 @@
                     <input class="d-none" value="$$title$$" type="text" name="utm_content" />
 
                     <label class="label-check text-center">
-                        <input type="checkbox" class="optedin-check" name="optedin" value="Accepted" required="required" onClick="gtag('event', 'check_news_agr_pp', {'event_label': 'button_subscribe_news', 'event_category': 'input', 'non_interaction': true});">I agree with Stellaxius <a href="#">privacy policy</a>.
+                        <input type="checkbox" class="optedin-check" name="optedin" value="Accepted" required="required" onClick="gtag('event', 'check_news_agr_pp', {'event_label': 'check_support_agree_privacy_policy', 'event_category': 'input', 'non_interaction': true});">I agree with Stellaxius <a href="#">privacy policy</a>.
                     </label>
 
                     <div class="google-captcha text-center">
@@ -576,7 +582,7 @@
                             document.getElementById("btn-subscribe-news").disabled = false;
                         }
                     </script>
-                    <input class="video-btn cta-btn" type="submit" value="Request more information" id="btn-subscribe-news" onClick="gtag('event', 'btn_news_subscribe', {'event_label': 'button_subscribe_news', 'event_category': 'input', 'non_interaction': true});" />
+                    <input class="video-btn cta-btn" type="submit" value="Request more information" id="btn-subscribe-news" onClick="gtag('event', 'btn_request_inf', {'event_label': 'button_support_pardot_request_information', 'event_category': 'input', 'non_interaction': true});" />
                 </form>
                 <!-- End Form -->
             </div>
@@ -585,6 +591,103 @@
 
     </section>
     <!-- End new pardot detials section -->
+
+    <!-- Start Knowledge Center section -->
+    <section class="knowledge-pardot-section section-gap-full relative" id="knowledge-pardot">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="text-center"><b>Knowledge Center</b> dolor sit <b>Pardot</b></h2>
+                <p class="text-center">Quisque id sollicitudin purus. Vestibulum pulvinar imperdiet dignissim. Mauris augue sem, malesuada eget rutrum non, maximus eget erat.</p>
+            </div>
+            <div class="row">
+                <!-- Item KC Post -->
+                <div class="col-md-3">
+                    <div class="single-feature">
+                        <div class="img-post-kc relative">
+                            <span>
+                                <a href="https://stellaxius.com/knowledgecenter/category/pardot/" class="category-pardot" target="_blank">Pardot</a>
+                            </span>
+                            <a href="https://stellaxius.com/knowledgecenter/pardot/pardot-multiple-languages/" target="_blank" onClick="gtag('event', 'post_kc_1', {'event_label': 'post_kc_pardot_1', 'event_category': 'kc', 'non_interaction': true});"><img class="img-fluid" src="https://stellaxius.com/knowledgecenter/wp-content/uploads/2019/08/post_pardot_multi_lang-1140x570.png" alt="How can Pardot support multiple languages"></a>
+                        </div>
+                        <div class="content-post-kc text-center">
+                            <a href="https://stellaxius.com/knowledgecenter/pardot/pardot-multiple-languages/" target="_blank" onClick="gtag('event', 'post_kc_1', {'event_label': 'post_kc_pardot_1', 'event_category': 'kc', 'non_interaction': true});">
+                                <h3>How can Pardot support multiple languages</h3>
+                                <p>When working for a company with international presence, it becomes highly important to communicate in the local languages of the 
+                                    countries you are present in. So, you surely want to rely on a marketing automation that supports multi-language options, in a 
+                                    smooth and efficient way. </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Item KC Post -->
+
+                <!-- Item KC Post -->
+                <div class="col-md-3">
+                    <div class="single-feature">
+                        <div class="img-post-kc relative">
+                            <span>
+                                <a href="https://stellaxius.com/knowledgecenter/category/pardot/" class="category-pardot" target="_blank">Pardot</a>
+                            </span>
+                            <a href="https://stellaxius.com/knowledgecenter/pardot/pardot-folders-scoring-categories/" target="_blank" onClick="gtag('event', 'post_kc_1', {'event_label': 'post_kc_pardot_2', 'event_category': 'kc', 'non_interaction': true});"><img class="img-fluid" src="https://stellaxius.com/knowledgecenter/wp-content/uploads/2019/03/post_pardot_folders-1140x570.png" alt="Everything you need to know about Pardot Folders and Scoring Categories"></a>
+                        </div>
+                        <div class="content-post-kc text-center">
+                            <a href="https://stellaxius.com/knowledgecenter/pardot/pardot-folders-scoring-categories/" target="_blank" onClick="gtag('event', 'post_kc_1', {'event_label': 'post_kc_pardot_2', 'event_category': 'kc', 'non_interaction': true});">
+                                <h3>Everything you need to know about Pardot Folders and Scoring Categories</h3>
+                                <p>Pardot folders are a top-down organizational feature that house campaigns, emails, and other marketing modules together. 
+                                    Folders let you segment and score marketing elements in a way that makes sense for your team.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Item KC Post -->
+
+                <!-- Item KC Post -->
+                <div class="col-md-3">
+                    <div class="single-feature">
+                        <div class="img-post-kc relative">
+                            <span>
+                                <a href="https://stellaxius.com/knowledgecenter/category/pardot/" class="category-pardot" target="_blank">Pardot</a>
+                            </span>
+                            <a href="https://stellaxius.com/knowledgecenter/pardot/pardot-dynamic-content/" target="_blank" onClick="gtag('event', 'post_kc_1', {'event_label': 'post_kc_pardot_3', 'event_category': 'kc', 'non_interaction': true});"><img class="img-fluid" src="https://stellaxius.com/knowledgecenter/wp-content/uploads/2019/06/post_pardot_dynamic_content-1140x570.jpg" alt="How to use Pardot Dynamic Content on Websites"></a>
+                        </div>
+                        <div class="content-post-kc text-center">
+                            <a href="https://stellaxius.com/knowledgecenter/pardot/pardot-dynamic-content/" target="_blank" onClick="gtag('event', 'post_kc_1', {'event_label': 'post_kc_pardot_3', 'event_category': 'kc', 'non_interaction': true});">
+                                <h3>How to use Pardot Dynamic Content on Websites</h3>
+                                <p>Tired of generic content? Pardot has the solution! It allows you to send truly personalized messages and content. How? By 
+                                    using Dynamic Content! Available in plus and advanced editions, this feature is crucial if you wish to send and show targeted 
+                                    and relatable content to prospects and website visitors!</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Item KC Post -->
+
+                <!-- Item KC Post -->
+                <div class="col-md-3">
+                    <div class="single-feature">
+                        <div class="img-post-kc relative">
+                            <span>
+                                <a href="https://stellaxius.com/knowledgecenter/category/pardot/" class="category-pardot" target="_blank">Pardot</a>
+                            </span>
+                            <a href="https://stellaxius.com/knowledgecenter/pardot/master-lead-qualification-in-pardot/" target="_blank" onClick="gtag('event', 'post_kc_1', {'event_label': 'post_kc_pardot_4', 'event_category': 'kc', 'non_interaction': true});"><img class="img-fluid" src="https://stellaxius.com/knowledgecenter/wp-content/uploads/2019/04/pardot-qualification-post1-1140x570.jpg" alt="Master Lead Qualification in Pardot"></a>
+                        </div>
+                        <div class="content-post-kc text-center">
+                            <a href="https://stellaxius.com/knowledgecenter/pardot/master-lead-qualification-in-pardot/" target="_blank" onClick="gtag('event', 'post_kc_1', {'event_label': 'post_kc_pardot_4', 'event_category': 'kc', 'non_interaction': true});">
+                                <h3>Master Lead Qualification in Pardot</h3>
+                                <p>Lead nurturing and qualification is one of the most important features of a marketing automation software. In this article we 
+                                    will cover the importance of lead qualification and how to do it in Pardot with a step-by-step approach to get you started!</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Item KC Post -->
+            </div>
+            <div class="area-btn text-center">
+                <a class="secondary-btn" href="https://stellaxius.com/knowledgecenter/category/pardot/" target="_blank" onClick="gtag('event', 'service_home_1', {'event_label': 'box_service_1', 'event_category': 'button', 'non_interaction': true});">view all articles</a>
+            </div>
+        </div>
+    </section>
+    <!-- End Knowledge Center section -->
 
     <!-- Start footer section -->
     <footer class="footer-section section-gap-half relative">
