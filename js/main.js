@@ -42,7 +42,6 @@
   // Active Menu 
   // ------------------------------------------------------------------------------ //
 
-
   $('#dopeNav').dopeNav({
     stickyNav: true,
   });
@@ -56,11 +55,9 @@
   });
 
 
-
   // ------------------------------------------------------------------------------ //
   // Team carousel  
   // ------------------------------------------------------------------------------ //
-
 
   $("#team-carusel").owlCarousel({
     items: 4,
@@ -88,7 +85,6 @@
   // Service carousel  
   // ------------------------------------------------------------------------------ //
 
-
   $("#service-carusel").owlCarousel({
     items: 4,
     loop: true,
@@ -115,7 +111,6 @@
   // Testimonial carousel  
   // ------------------------------------------------------------------------------ //
 
-
   $("#testimonial-carusel").owlCarousel({
     items: 1,
     loop: true,
@@ -133,6 +128,18 @@
       }
     }
   });
+
+  
+  $("#testimonial-carusel2").owlCarousel({
+    items: 1,
+    loop: true,
+    margin: 30,
+    dots: true,
+    autoplayHoverPause: true,
+    smartSpeed: 500,
+    autoplay: true,
+  });
+
 
   // ------------------------------------------------------------------------------ //
   // Certifications carousel  
@@ -169,45 +176,6 @@
   });
 
 
-  $("#testimonial-carusel2").owlCarousel({
-    items: 1,
-    loop: true,
-    margin: 30,
-    dots: true,
-    autoplayHoverPause: true,
-    smartSpeed: 500,
-    autoplay: true,
-  });
-
-
-  // ------------------------------------------------------------------------------ //
-  // Screenshot carousel  
-  // ------------------------------------------------------------------------------ //
-
-
-$('#screenshot-carusel').owlCarousel({
-    loop: true,
-    responsiveClass: true,
-    nav: true,
-    margin: 5,    
-    autoplayTimeout: 4000,
-    smartSpeed: 500,
-    center: true,
-    navText: ['<span class="ti ti-angle-left"></span>', '<span class="ti ti-angle-right"></span>'],
-    responsive: {
-        0: {
-            items: 1,
-        },
-        600: {
-            items: 3
-        },
-        1200: {
-            items: 5
-        }
-    }
-});
-
-
   // ------------------------------------------------------------------------------ //
   // Stat Counter  
   // ------------------------------------------------------------------------------ //
@@ -221,7 +189,6 @@ $('#screenshot-carusel').owlCarousel({
   // ------------------------------------------------------------------------------ //
   // Skill Section  
   // ------------------------------------------------------------------------------ //
-
 
   $(document).ready(function () {
 
@@ -242,7 +209,6 @@ $('#screenshot-carusel').owlCarousel({
   // ------------------------------------------------------------------------------ //
   // Accordian   
   // ------------------------------------------------------------------------------ //
-
 
   var allPanels = $(".accordion > dd").hide();
   allPanels.first().slideDown("easeOutExpo");
@@ -266,7 +232,6 @@ $('#screenshot-carusel').owlCarousel({
   // ------------------------------------------------------------------------------ //
   // Skillbar
   // ------------------------------------------------------------------------------ //
-
 
 	$(".skill_main").each(function() {
     $(this).waypoint(function() {
@@ -310,34 +275,5 @@ $('#screenshot-carusel').owlCarousel({
   $(window).stellar();
 
 
-  // ------------------------------------------------------------------------------ //
-  // Contact Form  
-  // ------------------------------------------------------------------------------ //
-
-  var submitContact = $('#submit-message'),
-    message = $('#msg');
-
-  submitContact.on('click', function (e) {
-    e.preventDefault();
-
-    var $this = $(this);
-
-    $.ajax({
-      type: "POST",
-      url: 'contact.php',
-      dataType: 'json',
-      cache: false,
-      data: $('#contact-form').serialize(),
-      success: function (data) {
-
-        if (data.info !== 'error') {
-          $this.parents('form').find('input[type=text],input[type=email],textarea,select').filter(':visible').val('');
-          message.hide().removeClass('success').removeClass('error').addClass('success').html(data.msg).fadeIn('slow').delay(5000).fadeOut('slow');
-        } else {
-          message.hide().removeClass('success').removeClass('error').addClass('error').html(data.msg).fadeIn('slow').delay(5000).fadeOut('slow');
-        }
-      }
-    });
-  });
 
 })(jQuery);
