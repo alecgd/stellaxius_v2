@@ -118,6 +118,7 @@
 
 .dope-nav-container .link-menu-s a:hover {
     background-color: rgba(47, 53, 66, 0.1);
+    border-bottom: 5px solid #f41e3d;
 }
 
 .dope-nav-container .active,
@@ -221,7 +222,7 @@
 .dopenav ul li a {
     padding: 0 15px;
     display: block;
-    height: 89px;
+    height: 95px;
     font-size: 14px;
     line-height: 90px;
 }
@@ -632,12 +633,22 @@
                 margin-right: 0;
             }
         }
+
+        .col-lg-6 {
+            padding-right: 10px;
+            padding-left: 0;
+        }
+
+        .reset-padding-right {
+            padding-right: 0;
+            padding-left: 10px;
+        }
     }
 
     .card {
         min-height: 250px;
         box-shadow: $shadow-image;
-        margin-right: 20px;
+        // margin-right: 20px; // 4 itens
         -webkit-transition: all 0.4s ease;
         -moz-transition: all 0.4s ease;
         -o-transition: all 0.4s ease;
@@ -655,6 +666,7 @@
                 padding: 0;
                 line-height: 24px;
                 color: $primary-color;
+                border-bottom: 0;
             }
         }
 
@@ -686,7 +698,7 @@
         }
 
         .card-body {
-            padding: 10px;
+            padding: 20px;
         }
 
         .card-title {
@@ -702,9 +714,10 @@
 }
 
 .breakpoint-off .dopenav ul li .menu-cards-serv {
-    width: 1064px;
+    // width: auto; // 4 itens
     display: inline-flex;
-    left: -660px;
+    // left: -660px; // 4 itens
+    left: -284px; // 2 itens
     padding: 20px;
     height: auto;
 }
