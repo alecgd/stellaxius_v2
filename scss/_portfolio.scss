@@ -208,8 +208,19 @@
 
             .modal-body {
 
-                h3 {
+                h4 {
                     margin-bottom: 15px;
+                }
+
+                .cta-download {
+                    background: #f3fafd;
+                    padding: 30px;
+                    text-align: center;
+
+                    .f-cta {
+                        text-align: left;
+                        margin-top: 20px;
+                    }
                 }
             }
         }
