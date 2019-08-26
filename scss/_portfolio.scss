@@ -178,6 +178,23 @@
 .support-pardot-section {
     background: $white;
     padding: 100px 0 0 0;
+
+    .details-left {
+        .img-desk {
+            display: block;
+        }
+
+        .img-mobile {
+            display: none;
+        }
+    }
+
+    .details-right {
+
+        img {
+            margin-top: 90px;
+        }
+    }
 }
 
 .new-pardot-section,
@@ -210,6 +227,14 @@
 
                 h4 {
                     margin-bottom: 15px;
+                }
+
+                ul {
+
+                    li {
+                        list-style: disc;
+                        margin: 0 0 10px 30px;
+                    }
                 }
 
                 .cta-download {

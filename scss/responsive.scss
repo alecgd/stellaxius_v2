@@ -715,6 +715,27 @@
         }
     }
 
+    .support-pardot-section {
+        
+        .details-left {
+            .img-desk {
+                display: none;
+            }
+    
+            .img-mobile {
+                display: block;
+                margin-bottom: 40px;
+            }
+        }
+
+        .details-right {
+    
+            img {
+                margin-top: 0px;
+            }
+        }
+    }
+
     .clients-section{
         .single-logo {
             flex: auto;
