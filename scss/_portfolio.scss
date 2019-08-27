@@ -252,6 +252,35 @@
                     }
                 }
             }
+
+            .modal-footer {
+
+                .right-nav-modals {
+                    position: absolute;
+                    font-size: 40px;
+                    opacity: 0.3;
+                    color: $black;
+                    left: 54%;
+                    transform: translateX(-50%);
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+
+                .left-nav-modals {
+                    position: absolute;
+                    font-size: 40px;
+                    opacity: 0.3;
+                    color: $black;
+                    left: 46%;
+                    transform: translateX(-50%);
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
         }
     }
 }

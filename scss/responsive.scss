@@ -767,4 +767,15 @@
         transform: scale(0.77);
         -webkit-transform: scale(0.77);
     }
+
+    .modal-footer {
+
+        .right-nav-modals {
+            left: 60%!important;
+        }
+
+        .left-nav-modals {
+            left: 40%!important;
+        }
+    }
 }
