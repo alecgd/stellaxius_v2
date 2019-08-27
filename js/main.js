@@ -258,7 +258,8 @@
   // Enable/Disable Button Recaptcha 
   // ------------------------------------------------------------------------------ //
 
-  document.getElementById("btn-subscribe-news").disabled=true;
+  document.getElementById("btn-subscribe-news").disabled = true;
+
 
   // ------------------------------------------------------------------------------ //
   // Display select item dropdown

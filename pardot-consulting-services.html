@@ -458,7 +458,7 @@
                             <div class="cta-download">
                                 <h4>Want to know more about how Pardot and Stellaxius can change your marketing?</h4>
                                 <p>Book a meeting with our consultants!</b>!</p>
-                                <button class="secondary-btn" type="button" data-toggle="collapse" data-target="#show-download-form2" aria-expanded="false" aria-controls="show-download-form">Download Free Checklist! <i class="fas fa-chevron-down"></i></button>
+                                <button class="secondary-btn" type="button" data-toggle="collapse" data-target="#show-download-form2" aria-expanded="false" aria-controls="show-download-form2">Download Free Checklist! <i class="fas fa-chevron-down"></i></button>
                                 <!-- CTA -->
                                 <div class="collapse" id="show-download-form2">
                                     <form action="#" method="post" class="f-cta">
@@ -491,10 +491,10 @@
                                         </div>
                                         <script>
                                             function enableBtn(){
-                                                document.getElementById("btn-subscribe-news").disabled = false;
+                                                document.getElementById("btn-form-modal-2").disabled = false;
                                             }
                                         </script>
-                                        <input class="cta-btn" type="submit" value="DOWNLOAD" id="btn-subscribe-news" onClick="gtag('event', 'btn_cta_down_subscribe', {'event_label': 'button_subscribe_cta_down', 'event_category': 'input', 'non_interaction': true});" />
+                                        <input class="cta-btn" type="submit" value="DOWNLOAD" id="btn-form-modal-2" onClick="gtag('event', 'btn_cta_down_subscribe', {'event_label': 'button_subscribe_cta_down', 'event_category': 'input', 'non_interaction': true});" />
                                     </form>
                                 </div>
                                 <!-- End CTA -->
@@ -617,9 +617,10 @@
                     <div class="features-new-pardot text-center">
                         <i class="ti-dashboard"></i>
                         <h4>Pardot Assessment</h4>
-                        <p>Duis risus ex, posuere sed aliquam eget, auctor nec nulla. In accumsan tortor sit amet 
-                            venenatis condimentum. Quisque ac leo ut nisl sollicitudin bibendum vel a odio. 
-                            Curabitur eleifend ante in arcu scelerisque lobortis vitae sit amet felis.</p>
+                        <p>Need a new set of eyes to understand how your Pardot instance can be improved? We can help. 
+                            Our assessment offer can be helpful to diagnose pain-points and provide solutions, evaluate 
+                            Pardot readiness to accomodate changes you need to do in your business processes or evaluate 
+                            how you can take your marketing automation to the next level.</p>
                         <a href="javascript:void(0)" class="link-btn" data-toggle="modal" data-target="#modal-infos-services-4" onClick="gtag('event', 'link_support_pardot_assess', {'event_label': 'link_need_support_assessment', 'event_category': 'support_pardot', 'non_interaction': true});">Read more</a>
                     </div>
                 </div>
@@ -634,20 +635,63 @@
                         </button>
                         </div>
                         <div class="modal-body">
-                            <h3>Pellentesque habitant morbi</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at orci tempor, dignissim tortor sed, 
-                                laoreet ante. Curabitur in gravida orci. Vestibulum ante ipsum primis in faucibus orci luctus et 
-                                ultrices posuere cubilia Curae; Curabitur non bibendum purus, eu faucibus est. Fusce tempor leo 
-                                quam, eget mattis tellus dignissim ac.</p>
-                            <p>Duis risus ex, posuere sed aliquam eget, auctor nec nulla. In accumsan tortor sit amet 
-                                    venenatis condimentum. Quisque ac leo ut nisl sollicitudin bibendum vel a odio. 
-                                    Curabitur eleifend ante in arcu scelerisque lobortis vitae sit amet felis.</p>
-                            <p>Duis risus ex, posuere sed aliquam eget, auctor nec nulla. In accumsan tortor sit amet 
-                                    venenatis condimentum. Quisque ac leo ut nisl sollicitudin bibendum vel a odio. 
-                                    Curabitur eleifend ante in arcu scelerisque lobortis vitae sit amet felis.</p>
+                            <h4>What does it mean to do an Assessment?</h4>
+                            <p>Our consultants will go through your Pardot account to technically and functionally audit it, in order to understand 
+                                if you have issues that need to be solved or if you have underused functionalities that could be of use to your business, 
+                                for example. Besides auditing the system, our team will shadow your team to get a sense of how they use the system, 
+                                so that we can help your team getting the most value from Pardot in their daily activities. By partnering with your 
+                                team we will also be able to understand your company processes and validate if there’s match between processes and 
+                                technology or if there’s some work that can be done to increase the match between the company processes, business 
+                                needs and technology.</p>
+                            <h4>Curious about why doing a Pardot Assessment and not sure you need it?</h4>
+                            <p>Check our Article <a href="#" class="link-btn" onClick="gtag('event', 'link_new_stan_imp', {'event_label': 'link_new_pardot_standard_implementation', 'event_category': 'new_pardot', 'non_interaction': true});">“Pardot Assessment: The Why”.</a></p>
+                            
+                            <div class="cta-download">
+                                <h4>Or just do our quick assessment quizz now and get your results!</h4>
+                                <button class="secondary-btn" type="button" data-toggle="collapse" data-target="#show-download-form4" aria-expanded="false" aria-controls="show-download-form4">Download Free Checklist! <i class="fas fa-chevron-down"></i></button>
+                                <!-- CTA -->
+                                <div class="collapse" id="show-download-form4">
+                                    <form action="#" method="post" class="f-cta">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>First Name</label>
+                                                <input class="input-field" type="text" name="first-name" required="required"  onClick="gtag('event', 'input_cta_down_fname', {'event_label': 'input_first_name_cta_down', 'event_category': 'input', 'non_interaction': true});" />
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label>Last Name</label>
+                                                <input class="input-field" type="text" name="first-name" required="required"  onClick="gtag('event', 'input_cta_down_lname', {'event_label': 'input_last_name_cta_down', 'event_category': 'input', 'non_interaction': true});" />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label>Email</label>
+                                                <input class="input-field" type="text" name="email" required="required"  onClick="gtag('event', 'input_cta_down_mail', {'event_label': 'input_email_cta_down', 'event_category': 'input', 'non_interaction': true});" />
+                                            </div>
+                                        </div>
+                                        <input class="d-none" value="Website" type="text" name="utm_source" />
+                                        <input class="d-none" value="$$title$$" type="text" name="utm_medium" />
+                                        <input class="d-none" value="$$title$$" type="text" name="utm_content" />
+            
+                                        <label class="label-check">
+                                            <input type="checkbox" class="optedin-check" name="optedin" value="Accepted" required="required" onClick="gtag('event', 'check_cta_down_agr_pp', {'event_label': 'check_agree_privacy_policy', 'event_category': 'input', 'non_interaction': true});">I agree with Stellaxius <a href="#">privacy policy</a>.
+                                        </label>
+            
+                                        <div class="google-captcha">
+                                            <div class="g-recaptcha" data-sitekey="6Ld11LEUAAAAAGIiz7iTlCvEWl1YjGcfYqIxA8-A" data-callback="enableBtn"></div>
+                                        </div>
+                                        <script>
+                                            function enableBtn(){
+                                                document.getElementById("btn-subscribe-news").disabled = false;
+                                            }
+                                        </script>
+                                        <input class="cta-btn" type="submit" value="DOWNLOAD" id="btn-subscribe-news" onClick="gtag('event', 'btn_cta_down_subscribe', {'event_label': 'button_subscribe_cta_down', 'event_category': 'input', 'non_interaction': true});" />
+                                    </form>
+                                </div>
+                                <!-- End CTA -->
+                            </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="cta-btn" data-dismiss="modal">Close</button>
+                            <a href="javascript:void(0)" class="link-btn" data-dismiss="modal">Close</a>
                         </div>
                     </div>
                     </div>
@@ -657,10 +701,11 @@
                 <div class="col-lg-4 ">
                     <div class="features-new-pardot text-center">
                         <i class="ti-alarm-clock"></i>
-                        <h4>Pardot Support Hours Packages</h4>
-                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos 
-                            himenaeos. Nam vel consequat ante. Nulla porta, mauris quis aliquam dictum, urna 
-                            odio accumsan quam, eu venenatis.</p>
+                        <h4>Pardot Support</h4>
+                        <p>Our Team of Pardot and Salesforce experts can help you achieve what you want to accomplish with Pardot. 
+                            Stellaxius provides ongoing Pardot support that you can use to ensure you follow the best marketing 
+                            automation practices, your process is constantly being optimized and in accordance to your business needs, 
+                            providing the engagement your customers and prospects needs to establish a successful business relationship.</p>
                         <a href="javascript:void(0)" class="link-btn" data-toggle="modal" data-target="#modal-infos-services-5" onClick="gtag('event', 'link_support_hours_pack', {'event_label': 'link_need_support_hours_packages', 'event_category': 'support_pardot', 'non_interaction': true});">Read more</a>
                     </div>
                 </div>
@@ -675,20 +720,67 @@
                         </button>
                         </div>
                         <div class="modal-body">
-                            <h3>Pellentesque habitant morbi</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at orci tempor, dignissim tortor sed, 
-                                laoreet ante. Curabitur in gravida orci. Vestibulum ante ipsum primis in faucibus orci luctus et 
-                                ultrices posuere cubilia Curae; Curabitur non bibendum purus, eu faucibus est. Fusce tempor leo 
-                                quam, eget mattis tellus dignissim ac.</p>
-                            <p>Duis risus ex, posuere sed aliquam eget, auctor nec nulla. In accumsan tortor sit amet 
-                                    venenatis condimentum. Quisque ac leo ut nisl sollicitudin bibendum vel a odio. 
-                                    Curabitur eleifend ante in arcu scelerisque lobortis vitae sit amet felis.</p>
-                            <p>Duis risus ex, posuere sed aliquam eget, auctor nec nulla. In accumsan tortor sit amet 
-                                    venenatis condimentum. Quisque ac leo ut nisl sollicitudin bibendum vel a odio. 
-                                    Curabitur eleifend ante in arcu scelerisque lobortis vitae sit amet felis.</p>
+                            <h4>How does it work?</h4>
+                            <p>By acquiring our services your company will have a dedicated Pardot Account Manager which will prioritize and keep 
+                                track of your requirements, so that you can receive the assistance you need from our pardot certified consultants, 
+                                marketing consultants, designers and developers.</p>
+                            <h4>Which type of support do we provide?</h4>
+                            <p>Our support service comprises a wide array of offers that will help your marketing team save time so that they can 
+                                focus on developing new content strategies to improve your return on investment.</p>
+                            <p>Our goal is to deliver the solution you are expecting as fast as possible, respecting budget and timing without
+                                compromising quality, because that’s what we really offer.</p>
+                            <p><b>Corrective maintenance:</b> Our support correct the inadequate applications functioning, given the functional specifications. 
+                                This includes Troubleshooting and bug fixing in Pardot. They include but are not limited to: Synchronization errors, 
+                                landing page / email templates bugs, forms not working.</p>
+                            <p><b>User Support:</b> Ativities that provide support to users (Help-Desk), such as: </p>
+                            
+                            <div class="cta-download">
+                                <h4>Not sure if you are ready for a Pardot Standard Implementation?</h4>
+                                <p>Check our <b>Pardot Standard Implementation Readiness Checklist</b>!</p>
+                                <button class="secondary-btn" type="button" data-toggle="collapse" data-target="#show-download-form5" aria-expanded="false" aria-controls="show-download-form5">Download Free Checklist! <i class="fas fa-chevron-down"></i></button>
+                                <!-- CTA -->
+                                <div class="collapse" id="show-download-form5">
+                                    <form action="#" method="post" class="f-cta">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>First Name</label>
+                                                <input class="input-field" type="text" name="first-name" required="required"  onClick="gtag('event', 'input_cta_down_fname', {'event_label': 'input_first_name_cta_down', 'event_category': 'input', 'non_interaction': true});" />
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label>Last Name</label>
+                                                <input class="input-field" type="text" name="first-name" required="required"  onClick="gtag('event', 'input_cta_down_lname', {'event_label': 'input_last_name_cta_down', 'event_category': 'input', 'non_interaction': true});" />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label>Email</label>
+                                                <input class="input-field" type="text" name="email" required="required"  onClick="gtag('event', 'input_cta_down_mail', {'event_label': 'input_email_cta_down', 'event_category': 'input', 'non_interaction': true});" />
+                                            </div>
+                                        </div>
+                                        <input class="d-none" value="Website" type="text" name="utm_source" />
+                                        <input class="d-none" value="$$title$$" type="text" name="utm_medium" />
+                                        <input class="d-none" value="$$title$$" type="text" name="utm_content" />
+            
+                                        <label class="label-check">
+                                            <input type="checkbox" class="optedin-check" name="optedin" value="Accepted" required="required" onClick="gtag('event', 'check_cta_down_agr_pp', {'event_label': 'check_agree_privacy_policy', 'event_category': 'input', 'non_interaction': true});">I agree with Stellaxius <a href="#">privacy policy</a>.
+                                        </label>
+            
+                                        <div class="google-captcha">
+                                            <div class="g-recaptcha" data-sitekey="6Ld11LEUAAAAAGIiz7iTlCvEWl1YjGcfYqIxA8-A" data-callback="enableBtn"></div>
+                                        </div>
+                                        <script>
+                                            function enableBtn(){
+                                                document.getElementById("btn-subscribe-news").disabled = false;
+                                            }
+                                        </script>
+                                        <input class="cta-btn" type="submit" value="DOWNLOAD" id="btn-subscribe-news" onClick="gtag('event', 'btn_cta_down_subscribe', {'event_label': 'button_subscribe_cta_down', 'event_category': 'input', 'non_interaction': true});" />
+                                    </form>
+                                </div>
+                                <!-- End CTA -->
+                            </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="cta-btn" data-dismiss="modal">Close</button>
+                            <a href="javascript:void(0)" class="link-btn" data-dismiss="modal">Close</a>
                         </div>
                     </div>
                     </div>
@@ -699,9 +791,9 @@
                     <div class="features-new-pardot text-center">
                         <i class="ti-layout "></i>
                         <h4>Pardot Templates</h4>
-                        <p>Proin dolor est, congue non placerat non, luctus non tortor. Mauris dapibus leo 
-                            ac velit blandit, et commodo lacus dapibus. Nam semper porta quam vitae finibus. 
-                            Aenean non luctus arcu, a elementum elit. Morbi posuere dolor ut iaculis.</p>
+                        <p>Looking for a new Pardot template but do not know where to start? Whether it is email, 
+                            landing page or even forms templates we build them according to your needs. All templates 
+                            we design are full responsive, able to support all devices sizes.</p>
                         <a href="javascript:void(0)" class="link-btn" data-toggle="modal" data-target="#modal-infos-services-6" onClick="gtag('event', 'link_support_templates', {'event_label': 'link_need_support_templates', 'event_category': 'support_pardot', 'non_interaction': true});">Read more</a>
                     </div>
                 </div>
@@ -716,20 +808,73 @@
                         </button>
                         </div>
                         <div class="modal-body">
-                            <h3>Pellentesque habitant morbi</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at orci tempor, dignissim tortor sed, 
-                                laoreet ante. Curabitur in gravida orci. Vestibulum ante ipsum primis in faucibus orci luctus et 
-                                ultrices posuere cubilia Curae; Curabitur non bibendum purus, eu faucibus est. Fusce tempor leo 
-                                quam, eget mattis tellus dignissim ac.</p>
-                            <p>Duis risus ex, posuere sed aliquam eget, auctor nec nulla. In accumsan tortor sit amet 
-                                    venenatis condimentum. Quisque ac leo ut nisl sollicitudin bibendum vel a odio. 
-                                    Curabitur eleifend ante in arcu scelerisque lobortis vitae sit amet felis.</p>
-                            <p>Duis risus ex, posuere sed aliquam eget, auctor nec nulla. In accumsan tortor sit amet 
-                                    venenatis condimentum. Quisque ac leo ut nisl sollicitudin bibendum vel a odio. 
-                                    Curabitur eleifend ante in arcu scelerisque lobortis vitae sit amet felis.</p>
+                            <p>Our services comprises the development of a custom design from scratch, make some minor changes to the current ones 
+                                you own, buy from stock templates or even download the free ones we have currently available!</p>
+                            <p>We have a team of design experts which craft beautiful responsive Pardot templates so it can match the look and feel 
+                                of your brand. Stellaxius provides templates for all pardot areas,* Forms, Email and Landing Pages*.</p>
+                            <h4>Form Templates</h4>
+                            <p>If you are looking to make an upgrade on how your forms look without dwelling to much on it we can design them or 
+                                revise what you currently have.</p>
+                            <p>Make your brand consistent with custom web form templates, responsive and errors free.</p>
+                            <h4>Email templates</h4>
+                            <p>Would you like just to focus on creating content of your own but you do not have the resources? With our email 
+                                templates you can easily replace images, fonts and text without breaking the email.</p>
+                            <p>Also, we can boost the quality of your email templates, by revising and make adjustments to become faster, 
+                                responsive as well as easier to read by the email service providers.</p>
+                            <h4>Landing Page Templates</h4>
+                            <p>The standalone web pages we built will help you convert more visitors into leads which can convert more into 
+                                business. All are 100% responsive and are capable of being edited using Pardot.</p>
+                            <p>Make your Landing Pages stand out from the competition!</p>
+                            <h4>A Gift from Stellaxius</h4>
+                            <p>Would you like to give a try without a “financial commitment”? We have designed a standard template for email 
+                                and landing page templates which you can download below!</p>
+                            
+                            <div class="cta-download">
+                                <h4>Check out our templates for free!</h4>
+                                <button class="secondary-btn" type="button" data-toggle="collapse" data-target="#show-download-form6" aria-expanded="false" aria-controls="show-download-form6">Download Free Checklist! <i class="fas fa-chevron-down"></i></button>
+                                <!-- CTA -->
+                                <div class="collapse" id="show-download-form6">
+                                    <form action="#" method="post" class="f-cta">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>First Name</label>
+                                                <input class="input-field" type="text" name="first-name" required="required"  onClick="gtag('event', 'input_cta_down_fname', {'event_label': 'input_first_name_cta_down', 'event_category': 'input', 'non_interaction': true});" />
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label>Last Name</label>
+                                                <input class="input-field" type="text" name="first-name" required="required"  onClick="gtag('event', 'input_cta_down_lname', {'event_label': 'input_last_name_cta_down', 'event_category': 'input', 'non_interaction': true});" />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label>Email</label>
+                                                <input class="input-field" type="text" name="email" required="required"  onClick="gtag('event', 'input_cta_down_mail', {'event_label': 'input_email_cta_down', 'event_category': 'input', 'non_interaction': true});" />
+                                            </div>
+                                        </div>
+                                        <input class="d-none" value="Website" type="text" name="utm_source" />
+                                        <input class="d-none" value="$$title$$" type="text" name="utm_medium" />
+                                        <input class="d-none" value="$$title$$" type="text" name="utm_content" />
+            
+                                        <label class="label-check">
+                                            <input type="checkbox" class="optedin-check" name="optedin" value="Accepted" required="required" onClick="gtag('event', 'check_cta_down_agr_pp', {'event_label': 'check_agree_privacy_policy', 'event_category': 'input', 'non_interaction': true});">I agree with Stellaxius <a href="#">privacy policy</a>.
+                                        </label>
+            
+                                        <div class="google-captcha">
+                                            <div class="g-recaptcha" data-sitekey="6Ld11LEUAAAAAGIiz7iTlCvEWl1YjGcfYqIxA8-A" data-callback="enableBtn"></div>
+                                        </div>
+                                        <script>
+                                            function enableBtn(){
+                                                document.getElementById("btn-subscribe-news").disabled = false;
+                                            }
+                                        </script>
+                                        <input class="cta-btn" type="submit" value="DOWNLOAD" id="btn-subscribe-news" onClick="gtag('event', 'btn_cta_down_subscribe', {'event_label': 'button_subscribe_cta_down', 'event_category': 'input', 'non_interaction': true});" />
+                                    </form>
+                                </div>
+                                <!-- End CTA -->
+                            </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="cta-btn" data-dismiss="modal">Close</button>
+                            <a href="javascript:void(0)" class="link-btn" data-dismiss="modal">Close</a>
                         </div>
                     </div>
                     </div>
