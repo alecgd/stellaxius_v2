@@ -99,7 +99,8 @@
 }
 
 .new-pardot-section,
-.support-pardot-section {
+.support-pardot-section,
+.the-discovery-section {
     background: url(../img/img_effect_section_service_1.svg) center top no-repeat;
     background-size: cover;
     padding: 150px 0 0 0;
@@ -112,43 +113,6 @@
         }
     }
 
-    .features-new-pardot {
-        background-color: $white;
-        border-radius: 2px;
-        -webkit-box-shadow: 0 6px 30px 0px rgba(0, 0, 0, 0.20);
-        -moz-box-shadow: 0 6px 30px 0px rgba(0, 0, 0, 0.20);
-        box-shadow: 0 6px 30px 0px rgba(0, 0, 0, 0.20);
-        -webkit-transition: all 0.4s ease;
-        -moz-transition: all 0.4s ease;
-        -o-transition: all 0.4s ease;
-        transition: all 0.4s ease;
-        padding: 30px;
-
-        &:hover {
-            -webkit-transform: translateY(-10px);
-            -moz-transform: translateY(-10px);
-            -ms-transform: translateY(-10px);
-            -o-transform: translateY(-10px);
-            transform: translateY(-10px);
-            -webkit-box-shadow: 0 0px 50px 0px rgba(0, 0, 0, 0.50);
-            -moz-box-shadow: 0 0px 50px 0px rgba(0, 0, 0, 0.50);
-            box-shadow: 0 0px 50px 0px rgba(0, 0, 0, 0.50);
-        }
-
-        i {
-            font-size: 70px;
-            background: linear-gradient(0deg, $black 0%, $secondary-color 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-	        -webkit-text-fill-color: transparent;
-        }
-
-        h4 {
-            font-size: 20px;
-            font-weight: bold;
-            margin: 20px 0;
-        }
-    }
 
     .form-section-service {
         background: #E8F5FB;
@@ -175,7 +139,107 @@
     }
 }
 
-.support-pardot-section {
+.the-discovery-section {
+    padding: 150px 0 50px 0;
+}
+
+.solution-path-section {
+    padding: 100px 0 50px 0!important;
+
+    .section-title {
+        padding: 0;
+        margin-bottom: 25px;
+    }
+
+}
+
+.features-new-pardot,
+.features-our-approach {
+    background-color: $white;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 6px 30px 0px rgba(0, 0, 0, 0.20);
+    -moz-box-shadow: 0 6px 30px 0px rgba(0, 0, 0, 0.20);
+    box-shadow: 0 6px 30px 0px rgba(0, 0, 0, 0.20);
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    padding: 30px;
+
+    &:hover {
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+        transform: translateY(-10px);
+        -webkit-box-shadow: 0 0px 50px 0px rgba(0, 0, 0, 0.50);
+        -moz-box-shadow: 0 0px 50px 0px rgba(0, 0, 0, 0.50);
+        box-shadow: 0 0px 50px 0px rgba(0, 0, 0, 0.50);
+    }
+
+    i {
+        font-size: 70px;
+        background: linear-gradient(0deg, $black 0%, $secondary-color 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 20px 0;
+    }
+}
+
+.features-our-approach {
+    padding: 20px;
+    height: 240px;
+
+    h4 {
+        color: $white;
+        font-size: 23px;
+    }
+}
+
+.steps {
+    position: absolute;
+    bottom: 14px;
+    z-index: -1;
+}
+
+.o-a-img-1 {
+    background: url(../img/img_approach_1.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    h4 {
+        margin-top: 70px;
+    }
+}
+
+.o-a-img-2 {
+    background: url(../img/img_approach_2.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    h4 {
+        margin-top: 70px;
+    }
+}
+
+.o-a-img-3 {
+    background: url(../img/img_approach_3.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    h4 {
+        margin-top: 70px;
+    }
+}
+
+.support-pardot-section,
+.solution-path-section {
     background: $white;
     padding: 100px 0 0 0;
 
