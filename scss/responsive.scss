@@ -786,4 +786,30 @@
     .steps {
         display: none;
     }
+
+    .box-img-graphic-1 {
+        background: none;
+        height: auto;
+        margin: 40px 0;
+
+        .line-1-graphic-1 {
+            position: relative;
+            top: 0;
+            text-align: center!important;
+        }
+    
+        .line-2-graphic-1 {
+            position: relative;
+            bottom: 0;
+            text-align: center!important;
+        }
+    }
+
+    .box-default {
+        margin-bottom: 20px;
+
+        .content-box {
+            padding: 20px;
+        }
+    }
 }

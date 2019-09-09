@@ -155,7 +155,8 @@
 }
 
 .features-new-pardot,
-.features-our-approach {
+.features-our-approach,
+.box-default {
     background-color: $white;
     border-radius: 2px;
     -webkit-box-shadow: 0 6px 30px 0px rgba(0, 0, 0, 0.20);
@@ -190,6 +191,47 @@
         font-size: 20px;
         font-weight: bold;
         margin: 20px 0;
+    }
+}
+
+.box-default {
+    padding: 0;
+
+    .content-box {
+        padding: 30px;
+
+        ul {
+            list-style: circle;
+            padding: 0 0 0 30px;
+        }
+    }
+}
+
+.box-img-graphic-1 {
+    background: url(../img/img-our-approach_graphi-1.svg) center top no-repeat;
+    background-size: cover;
+    margin: 150px 0;
+    height: 384px;
+
+    .line-1-graphic-1 {
+        position: absolute;
+        top: -101px;
+    }
+
+    .line-2-graphic-1 {
+        position: absolute;
+        bottom: -114px;
+    }
+
+    h4 {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 18px;
     }
 }
 
