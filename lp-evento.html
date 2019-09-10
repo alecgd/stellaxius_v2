@@ -60,6 +60,64 @@
         <div class="loader-section section-right"></div>
     </div>
 
+    <!-- Cookie Bar -->
+    <div id="cookie-bar">
+        <div class="row expl-cookies">
+            <div class="row sett-cookies" id="container-pref" style="display: none;">
+                <i class="link-btn far fa-times-circle" id="btn-show-hide-pref2"></i>
+                <h3>Privacy Preferences</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus, urna vel lobortis feugiat, 
+                            risus nibh iaculis sapien, eu aliquet orci mauris in erat. Mauris sit amet mattis ante. Sed 
+                            tortor dui, condimentum ut condimentum ut, aliquam sit amet quam. Etiam non viverra nunc, eu 
+                            volutpat nunc. Proin non viverra magna.</p>
+                <div class="col-9 list-cookies">
+                    <h5>Google Analytics</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus, urna vel lobortis feugiat.</p>
+                </div>
+                <div class="col-3 control-cookies">
+                    <span class="req-cookie">REQUERID</span>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-9 list-cookies">
+                    <h5>Preference</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus, urna vel lobortis feugiat, risus nibh iaculis.</p>
+                </div>
+                <div class="col-3 control-cookies">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-9 list-cookies">
+                    <h5>Marketing</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus, urna vel lobortis.</p>
+                </div>
+                <div class="col-3 control-cookies">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-lg-9 text-cookies">
+                <h3>Our use of cookies</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus, urna vel lobortis feugiat, 
+                    risus nibh iaculis sapien, eu aliquet orci mauris in erat. Mauris sit amet mattis ante. Sed 
+                    tortor dui, condimentum ut condimentum ut, aliquam sit amet quam. Etiam non viverra nunc, eu 
+                    volutpat nunc. Proin non viverra magna.</p>
+                <h4>Necessary cookies</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus, urna vel lobortis feugiat, 
+                    risus nibh iaculis sapien, eu aliquet orci mauris in erat.</p>
+            </div>
+            <div class="col-lg-3 settings-cookies">
+                <a href="javascript:void(0)" class="open-cookies link-btn" id="btn-show-hide-pref" onClick="gtag('event', 'pref_cookies', {'event_label': 'link_preferences_cookies', 'event_category': 'link', 'non_interaction': true});">Privacy Preferences</a>
+                <a href="javascript:void(0)" class="primary-btn cookie-btn-acpt" onClick="gtag('event', 'accept_cookies', {'event_label': 'btn_accept_cookies', 'event_category': 'link', 'non_interaction': true});">Accept and close</a>
+            </div>
+        </div>
+    </div>
+    <!-- End Cookie Bar -->
+
     <!-- Start header section -->
     <header class="header-area" id="header-area">
         <div class="dope-nav-container breakpoint-off">
@@ -188,6 +246,8 @@
             <div class="row align-items-center">
                 <div class="col-lg-7 banner-left">
                     <h1>Pardot Consulting</h1>
+                    <button onclick="$crisp.push(['do', 'chat:open'])">Click Me!</button>
+
                     <h2>Get to know how our certified pardot consultants can help you with your marketing automation needs.</h2>
                     <a class="secondary-btn" href="#services" onClick="gtag('event', 'cta_header_pardot', {'event_label': 'button_cta_pardot', 'event_category': 'button', 'non_interaction': true});">KNOW MORE</a>
                 </div>
