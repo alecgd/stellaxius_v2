@@ -140,18 +140,42 @@
     }
 }
 
-.the-discovery-section,
+.the-discovery-section {
+    padding: 150px 0 0 0;
+}
+
 .final-desti-section {
-    padding: 150px 0 50px 0;
+    padding: 150px 0 0 0;
+
+    ul {
+        list-style: disc;
+        padding: 0 0 0 30px;
+        margin: 0 0 15px 0;
+    }
+
+    .img-final-section {
+        margin-bottom: 50px;
+    }
+
+    .details-right {
+
+        img {
+            margin-top: 150px;
+        }
+    }
 }
 
 .solution-path-section {
-    padding: 100px 0 50px 0!important;
+    padding: 80px 0 80px 0!important;
 
     .section-title {
         padding: 0;
         margin-bottom: 25px;
     }
+}
+
+.img-final-section {
+    padding-top: 50px;
 }
 
 .features-new-pardot,
