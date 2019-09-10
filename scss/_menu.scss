@@ -208,7 +208,7 @@
 }
 
 .dopenav ul li.cn-dropdown-item ul li {
-    position: relative;
+    position: relative!important;
 }
 
 .dopenav ul li ul li {
@@ -285,7 +285,10 @@
     
     p {
         margin: 0;
+        font-size: 14px;
+        line-height: 16px;
         display: inline-block;
+        
     }
 
     &:hover {
