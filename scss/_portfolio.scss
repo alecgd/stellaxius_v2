@@ -174,12 +174,35 @@
     }
 }
 
+.solution-pardot-info {
+
+    .details-left {
+
+        .secondary-btn {
+            margin-top: 20px;
+        }
+        
+        h3 {
+            margin-bottom: 10px;
+        }
+    }
+
+    .details-right {
+
+        img {
+            margin-top: 0px!important;
+        }
+    }
+}
+
 .img-final-section {
     padding-top: 50px;
 }
 
 .features-new-pardot,
 .features-our-approach,
+.features-sf-cons-imp,
+.salesf-cons-impl-box,
 .box-default {
     background-color: $white;
     border-radius: 2px;
@@ -216,6 +239,10 @@
         font-weight: bold;
         margin: 20px 0;
     }
+}
+
+.salesf-cons-impl-box {
+    min-height: 379px;
 }
 
 .box-default {
@@ -305,8 +332,37 @@
     }
 }
 
+.sfc-img-1 {
+    background: url(../img/img_sales_sfci.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.sfc-img-2 {
+    background: url(../img/img_mkt_sfci.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.sfc-img-3 {
+    background: url(../img/img_supp_sfci.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.features-sf-cons-imp {
+    padding: 20px 100px 20px 20px;
+    height: 240px;
+
+    h4 {
+        color: $white;
+        font-size: 23px;
+    }
+}
+
 .support-pardot-section,
-.solution-path-section {
+.solution-path-section,
+.solution-pardot-info {
     background: $white;
     padding: 100px 0 0 0;
 

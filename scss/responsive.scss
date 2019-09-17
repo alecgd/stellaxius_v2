@@ -675,6 +675,10 @@
 
                 .banner-right {
                     padding-top: 40px;
+
+                    .img-sfci {
+                        bottom: 0;
+                    }
                 }
             }
         }
@@ -779,7 +783,8 @@
         }
     }
     
-    .features-our-approach {
+    .features-our-approach,
+    .features-sf-cons-imp {
         margin-bottom: 20px;
     }
 
