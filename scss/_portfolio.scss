@@ -165,6 +165,52 @@
     }
 }
 
+.work-with-us-section {
+    background: #fff;
+    padding: 30px 0 50px 0;
+
+    .box-default {
+        padding: 30px 30px 10px 30px;
+        background: url(../img/img_bg_work_us.svg) no-repeat;
+        background-size: auto;
+        background-position: -23px 234px;
+
+        h4 {
+            margin: 0 0 15px 0;
+            text-transform: uppercase;
+            font-size: 18px;
+            background: rgba(140, 196, 255, 0.16);
+            padding: 5px;
+            border-radius: 5px;
+        }
+    }
+    .form-section-service {
+        background: #E8F5FB;
+        padding: 70px 0 0 0;
+        margin-top: 70px;
+
+        .f-service {
+            max-width: 920px;
+            margin: 0 auto;
+        }
+
+        .g-recaptcha {
+            display: inline-block;
+        }
+
+        .dropdown-toggle::after {
+            right: 20px;
+            position: absolute;
+            top: 25px;
+        }
+
+        .cta-btn {
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}
+
 .solution-path-section {
     padding: 80px 0 80px 0!important;
 
