@@ -251,7 +251,32 @@
 
     .wave {
       position: absolute;
+      width: 100%;
       bottom: -1px;
       left: 0;
+    }
+
+    .wave-contact {
+      background: url(../img/img_effect_header_contact_1.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      height: 125px;
+    }
+
+    .wave-pardot {
+      background: url(../img/img_effect_header_service_1.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      height: 125px;
+    }
+
+    .wave-approach {
+      background: url(../img/img_effect_header_approach.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      height: 89px;
     }
 }

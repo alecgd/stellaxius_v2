@@ -84,7 +84,7 @@
         padding-right: 25px;
     }
       
-    .details-right{
+    .details-right {
         padding-left: 25px;
 
         img {
@@ -95,6 +95,45 @@
     .img-service-pardot {
         min-height: 240px;
         margin-bottom: 30px;
+    }
+
+    .form-contact-us {
+
+        .box-default {
+            padding: 30px 30px 15px 30px;
+        }
+
+        .map-contact {
+            padding: 0;
+            margin-top: 30px;
+            height: 250px;
+        }
+
+        .infos-contact {
+
+            .row {
+                margin-left: 0;
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            i {
+                font-size: 20px;
+            }
+
+            .col-sm-1 {
+                padding: 0;
+            }
+
+            .col-sm-11 {
+                font-size: 14px;
+                padding: 0 0 0 20px;
+
+                a, a:hover {
+                    color: $text-color;
+                }
+            }
+        }
     }
 }
 
@@ -522,5 +561,15 @@
 
     .area-btn {
         margin-top: 30px;
+    }
+}
+
+.banner-contactus {
+
+    .banner-right {
+
+        img {
+            margin: 60px 0 -60px 0;
+        }
     }
 }
