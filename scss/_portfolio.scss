@@ -121,16 +121,49 @@
                 font-size: 20px;
             }
 
-            .col-sm-1 {
+            .col-1 {
                 padding: 0;
             }
 
-            .col-sm-11 {
+            .col-11 {
                 font-size: 14px;
                 padding: 0 0 0 20px;
 
                 a, a:hover {
                     color: $text-color;
+                }
+            }
+        }
+
+        .social-icons {
+            margin-top: 70px;
+            font-size: 40px;
+
+            .fa-linkedin {
+                color: #0077B5;
+                width: 36px;
+                height: 36px;
+                @include transition();
+
+                &:hover {
+                    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
+                    -ms-transform: translateY(-2px);
+                    transform: translateY(-2px);
+                    -webkit-transform: translateY(-2px);
+                }
+            }
+
+            .fa-twitter-square {
+                color: #55acee;
+                width: 36px;
+                height: 36px;
+                @include transition();
+
+                &:hover {
+                    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
+                    -ms-transform: translateY(-2px);
+                    transform: translateY(-2px);
+                    -webkit-transform: translateY(-2px);
                 }
             }
         }
