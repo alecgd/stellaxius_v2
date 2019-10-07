@@ -248,42 +248,51 @@
         }
       }
     }
+}
 
-    .wave {
-      position: absolute;
-      width: 100%;
-      bottom: -1px;
-      left: 0;
-    }
+.wave {
+  position: absolute;
+  width: 100%;
+  bottom: -1px;
+  left: 0;
+}
 
-    .wave-contact {
-      background: url(../img/img_effect_header_contact_1.svg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center bottom;
-      height: 125px;
-    }
+.wave-contact {
+  background: url(../img/img_effect_header_contact_1.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 125px;
+}
 
-    .wave-pardot {
-      background: url(../img/img_effect_header_service_1.svg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center bottom;
-      height: 125px;
-    }
+.wave-pardot {
+  background: url(../img/img_effect_header_service_1.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 125px;
+}
 
-    .wave-approach {
-      background: url(../img/img_effect_header_approach.svg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center bottom;
-      height: 130px;
-    }
-    .wave-cloud {
-      background: url(../img/img_effect_header_sales_c.svg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center bottom;
-      height: 125px;
-    }
+.wave-approach {
+  background: url(../img/img_effect_header_approach.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 130px;
+}
+.wave-cloud {
+  background: url(../img/img_effect_header_sales_c.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 125px;
+}
+
+.wave-close-sales {
+  background: url(../img/img_efeito_bg_2.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 95px;
+  bottom: 99px;
 }
