@@ -831,6 +831,7 @@
         .salesf-cons-impl-box {
             margin-bottom: 20px;
             padding: 20px;
+            text-align: center;
         }
     }
 
@@ -950,6 +951,17 @@
             height: 35px;
         }
     }
-    
-    
+
+    .img-wwu-1,
+    .img-wwu-2,
+    .img-wwu-3 {
+        display: none;
+    }
+
+    .work-with-us-section {
+
+        box-default-wwu {
+            padding: 0 0 40px 0;
+        }
+    }.
 }
