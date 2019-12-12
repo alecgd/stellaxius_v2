@@ -97,6 +97,16 @@
         margin-bottom: 30px;
     }
 
+    .wwa-content {
+
+        .open-text {
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+
     .form-contact-us {
 
         .box-default {
@@ -176,6 +186,7 @@
 .the-discovery-section,
 .final-desti-section,
 .new-sales-cloud-section,
+.who-we-are-cloud-section,
 .support-sales-cloud-section {
     background: url(../img/img_effect_section_service_1.svg) center top no-repeat;
     background-size: cover;
@@ -812,6 +823,16 @@
 }
 
 .banner-contactus {
+
+    .banner-right {
+
+        img {
+            margin: 60px 0 -60px 0;
+        }
+    }
+}
+
+.banner-who-we-are {
 
     .banner-right {
 
