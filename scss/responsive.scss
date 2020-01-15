@@ -797,6 +797,10 @@
         height: auto;
         margin: 40px 0;
 
+        .text-right {
+            text-align: left!important;
+        }
+
         .line-1-graphic-1 {
             position: relative;
             top: 0;
@@ -978,4 +982,25 @@
           }
         }
       }
+
+    .app-lifecycle-content,
+    .system-integr-content {
+        .col-lg-5 {
+            img {
+                margin: 0 0 50px 0;
+            }
+        }
+    }
+
+    .applications-lifecicle-section,
+    .design-archit-section,
+    .system-integration-section,
+    .sdsi-why-work-section {
+        .row {
+            .col-lg-4,
+            .col-lg-3 {
+                margin: 0 0 20px 0;
+            } 
+        }
+    }
 }

@@ -184,6 +184,8 @@
 .new-pardot-section,
 .support-pardot-section,
 .the-discovery-section,
+.applications-lifecicle-section,
+.sdsi-why-work-section,
 .final-desti-section,
 .join-us-cta-section,
 .new-sales-cloud-section,
@@ -225,6 +227,12 @@
             display: block;
         }
     }
+}
+
+.system-integration-section {
+    background: url(../img/img_effect_section_service_2.svg) center top no-repeat;
+    background-size: cover;
+    padding: 150px 0 0 0;
 }
 
 .new-sales-cloud-section {
@@ -374,6 +382,76 @@
     padding: 150px 0 0 0;
 }
 
+.design-archit-section {
+    padding: 70px 0;
+
+    .design-archit-content {
+        margin: 0 0 50px 0;
+    }
+
+    .section-title {
+        padding: 0;
+        margin: 0;
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+.sdsi-help-you-section {
+    padding: 70px 0;
+
+    .section-title {
+        padding: 0;
+        margin: 0;
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+.applications-lifecicle-section,
+.system-integration-section {
+    padding: 150px 0 0 0;
+
+    .system-integr-content {
+        margin: 0 0 50px 0;
+    }
+
+    .section-title {
+        padding: 0;
+        margin: 0;
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+.sdsi-why-work-section {
+    padding: 150px 0 100px 0;
+    margin: 0 0 20px 0;
+
+    .sdsi-why-work {
+        margin: 50px 0 0 0;
+    }
+
+    .section-title {
+        padding: 0;
+        margin: 0;
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+.sdsi-cta {
+    margin: 0 0 50px 0;
+}
+
 .final-desti-section {
     padding: 150px 0 0 0;
 
@@ -463,7 +541,7 @@
 }
 
 .solution-path-section {
-    padding: 80px 0 80px 0!important;
+    padding: 80px 0!important;
 
     .section-title {
         padding: 0;
@@ -500,6 +578,7 @@
 .features-our-approach,
 .features-sf-cons-imp,
 .salesf-cons-impl-box,
+.sdsi-box,
 .box-default {
     background-color: $white;
     border-radius: 2px;
@@ -541,6 +620,12 @@
 
 .salesf-cons-impl-box {
     min-height: 379px;
+}
+
+.sdsi-box {
+    p {
+        margin: 15px 0 0 0;
+    }
 }
 
 .box-default {
@@ -648,6 +733,24 @@
     background-position: center center;
 }
 
+.sdsi-img-1 {
+    background: url(../img/img_lifec_sdsi.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.sdsi-img-2 {
+    background: url(../img/img_desin_sdsi.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.sdsi-img-3 {
+    background: url(../img/img_integ_sdsi.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
 .features-sf-cons-imp {
     padding: 20px 100px 20px 20px;
     height: 240px;
@@ -706,6 +809,7 @@
 
 .support-pardot-section,
 .solution-path-section,
+.sdsi-help-you-section,
 .solution-pardot-info {
     background: $white;
     padding: 100px 0 0 0;
