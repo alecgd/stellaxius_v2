@@ -814,6 +814,51 @@
         }
     }
 
+    .box-img-graphic-2 {
+
+        .line-1-graphic-1 {
+
+            img {
+                display: none;
+            }
+        }
+
+        .line-2-graphic-1 {
+            margin-top: 0px;
+            margin-bottom: 50px;
+
+            .col-lg-3 {
+
+                h4 {
+                    color: #fff;
+                }
+                p {
+                    margin: 0;
+                    color: #fff;
+                }
+            }
+
+            .item-1 {
+                background: #F1C40F;
+                padding: 20px;
+                border-radius: 5px 5px 0 0;
+            }
+            .item-2 {
+                background: #56CCF2;
+                padding: 20px;
+            }
+            .item-3 {
+                background: #BB6BD9;
+                padding: 20px;
+            }
+            .item-4 {
+                background: #47515A;
+                padding: 20px;
+                border-radius: 0 0 5px 5px;
+            }
+        }
+    }
+
     .box-default {
         margin-bottom: 20px;
 
